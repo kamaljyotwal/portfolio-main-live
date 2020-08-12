@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(71, 110, 110);
+}
+
+nav {
+  text-align: center;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  float: left;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: yellow;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+/* hover on link underline */
+.innerlink::after {
+  content: "";
+  display: block;
+  height: 2px;
+  transform: scaleX(0);
+  background: #fff;
+  transition: all 250ms;
+  margin-top: 3px;
+}
+
+.innerlink:hover::after {
+  transform: scaleX(1);
+}
