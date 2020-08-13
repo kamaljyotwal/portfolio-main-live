@@ -5,7 +5,11 @@
 }
 
 body {
-  background-color: rgb(71, 110, 110);
+  
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  background-size: cover;
 }
 
 nav {
