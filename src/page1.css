@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,19 +7,29 @@
 }
 
 body {
-  
-  background-repeat: no-repeat;
-  width: auto;
-  height: auto;
-  background-size: cover;
+  background: #324455;
 }
 
-nav {
+/* ****************************************************************************************** */
+/* NAV  */
+/* ****************************************************************************************** */
+/* nav {
   text-align: center;
   overflow: auto;
   position: sticky;
   top: 0;
   z-index: 2;
+  transition: all 400ms;
+  height: 10.5vh; 
+  display: none;
+}
+
+.navInverse {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navInverse .innerlink {
+  color: rgb(231, 231, 231);
 }
 
 .links {
@@ -29,12 +41,11 @@ nav a {
   float: left;
   font-size: 1.4rem;
   text-decoration: none;
-  color: yellow;
+  color: white;
   padding: 10px 20px;
   margin: 10px;
-}
-
-/* hover on link underline */
+} */
+/* 
 .innerlink::after {
   content: "";
   display: block;
@@ -47,4 +58,143 @@ nav a {
 
 .innerlink:hover::after {
   transform: scaleX(1);
+} */
+
+
+/* *********************************************************************** */
+/* About section */
+/* ************************************************************************ */
+
+.about {
+  margin-top: 1.5rem;
+  max-height: 90vh;
+}
+
+.textcontainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  min-height: 80vh;
+  border-radius: 4px;
+  padding: 40px 80px;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.2rem;
+  font-family: roboto;
+  overflow-y: none;
+}
+
+.about h2 {
+  font-family: poppins;
+  font-size: 3rem;
+}
+
+.about p {
+  padding-top: 1rem;
+}
+
+/* ************************************************************************* */
+/* Projects section start */
+/* ************************************************************************* */
+.projects {
+  display: none;
+  /* border: 2px solid salmon; */
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 8vh;
+}
+
+.projects h2 {
+  padding-bottom: 20px;
+  font-size: 2.2rem;
+  font-family: poppins;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.projectTiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid pink; */
+}
+
+.card {
+  border: 3px solid rgb(189, 77, 120);
+  border-radius: 4px;
+  width: 27%;
+  min-width: 300px;
+  /* flex-basis: 300px; */
+  height: auto;
+  margin: 2.2%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.cardTitle {
+  /* font-size: 1.3rem; */
+  font-weight: lighter;
+  font-family: poppins, sans-serif;
+  background: rgb(214, 214, 132);
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card a {
+  text-decoration: none;
+  background-color: rgb(92, 187, 92);
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+
+/* ********************************************************************* */
+/* skills section */
+/* ********************************************************************* */
+.skills {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+.skills h3 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
