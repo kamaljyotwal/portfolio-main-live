@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./page1.css" />
+    <script src="./snap.svg-min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- ==================================================================== -->
+      <!--copied data  -->
+      <!-- =================================================================== -->
+      <button class="menu-button" id="open-button"></button>
+      <div class="menu-wrap">
+        <nav class="menu">
+          <div class="listContent">
+            <a href="#" class="innerlink" onclick="openCity(event, 'aboutsectionid')">About</a>
+            <a href="#" class="innerlink active" onclick="openCity(event, 'skillsectionid')"
+              >Skills</a
+            >
+            <a href="#" class="innerlink" onclick="openCity(event, 'projectsectionid')">Projects</a>
+
+            <a href="#" class="innerlink">Certificates</a>
+            <a href="#" class="innerlink">Contact</a>
+          </div>
+        </nav>
+        <button class="close-button" id="close-button"></button>
+        <div
+          class="morph-shape"
+          id="morph-shape"
+          data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            height="100%"
+            viewBox="0 0 100 800"
+            preserveAspectRatio="none"
+          >
+            <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z" />
+          </svg>
+        </div>
+      </div>
+      <!-- ======================================================================= -->
+      <!--copied data  end-->
+      <!-- ========================================================================== -->
+
+      <section class="about sections w3-container w3-animate-opacity" id="aboutsectionid">
+        <div class="textcontainer">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eius voluptate
+            ullam accusantium maiores, quos perspiciatis quaerat modi iure suscipit molestias,
+            labore tenetur voluptatum dignissimos quisquam recusandae inventore voluptatibus is
+            pariatur amet. Dolore rerum nostrum labore corporis repella Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Blanditiis, vel.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects sections w3-animate-opacity" id="projectsectionid">
+        <h2>Projects</h2>
+        <div class="projectTiles">
+          <div class="card">
+            <h3 class="cardTitle">ToDo App</h3>
+            <div class="cardcontent">
+              <img src="../photos/screenshots/travel.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="cardTitle">Travel Agency Site</h3>
+            <div class="cardcontent">
+              <img src="./photos/travel.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="cardTitle">Cake Shop Bootstrap</h3>
+            <div class="cardcontent">
+              <img src="./photos/travel.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="cardTitle">Plantshop Landing Page</h3>
+            <div class="cardcontent">
+              <img src="./photos/plantlanding.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="cardTitle">Relaxation Breathing app</h3>
+            <div class="cardcontent">
+              <img src="./photos/travel.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="cardTitle">Another Project</h3>
+            <div class="cardcontent">
+              <img src="./photos/travel.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="cardTitle">Another Project</h3>
+            <div class="cardcontent">
+              <img src="./photos/travel.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="cardTitle">Last Project</h3>
+            <div class="cardcontent">
+              <img src="../photos/screenshots/plantlanding.png" alt="" />
+              <a href="#">See Live</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section -->
+      <section class="skills sections w3-container w3-animate-opacity" id="skillsectionid">
+        <h3>Skills</h3>
+        <div class="skillscontainer">
+          <div class="chip">
+            <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
+            HTML 5
+          </div>
+          <div class="chip">
+            <img src="./photos/html.png" alt="Person" width="96" height="96" />
+            CSS 3
+          </div>
+          <div class="chip">
+            <img src="./photos/html.png" alt="Person" width="96" height="96" />
+            JAVASCRIPT
+          </div>
+          <div class="chip">
+            <img src="./photos/html.png" alt="Person" width="96" height="96" />
+            BOOTSTRAP
+          </div>
+          <div class="chip">
+            <img src="./photos/html.png" alt="Person" width="96" height="96" />
+            MATERIALIZE
+          </div>
+          <div class="chip">
+            <img src="./photos/html.png" alt="Person" width="96" height="96" />
+            REACT
+          </div>
+          <div class="chip">
+            <img src="./photos/html.png" alt="Person" width="96" height="96" />
+            REDUX
+          </div>
+          <div class="chip">
+            <img src="./photos/html.png" alt="Person" width="96" height="96" />
+            GITHUB
+          </div>
+          <div class="chip">
+            <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
+            SCSS
+          </div>
+        </div>
+      </section>
+      <!-- skills section ends-->
+      <section class="certificates"></section>
+      <section class="social"></section>
+      <section class="contact"></section>
+    </main>
+    <!-- <script src="./page1.js"></script> -->
+    <script src="page1.js"></script>
+    <script src="./classie.js"></script>
+    <script src="./main4.js"></script>
+  </body>
+</html>

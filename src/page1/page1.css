@@ -1,0 +1,344 @@
+/* ************************************************* */
+/* copied nav bar */
+/* ************************************************* */
+
+html,
+body {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu Button */
+.menu-button {
+  position: fixed;
+  z-index: 10;
+  margin: 1em;
+  padding: 0;
+  width: 3em;
+  height: 2.5em;
+  border: none;
+  /* text-indent: 2.5em; */
+  font-size: 1em;
+  color: transparent;
+  background: transparent;
+  /* border: 1px solid red; */
+}
+
+.menu-button::before {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  background: linear-gradient(
+    #373a47 20%,
+    transparent 20%,
+    transparent 40%,
+    #373a47 40%,
+    #373a47 60%,
+    transparent 60%,
+    transparent 80%,
+    #373a47 80%
+  );
+  content: "";
+}
+
+.menu-button:hover {
+  opacity: 0.6;
+}
+
+/* --------------------- */
+/* nav title */
+.menu-wrap a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  display: block;
+  padding: 0.8em;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+  color: #c94e50;
+}
+/*  */
+/* main{
+  position: relative;
+} */
+/* Menu */
+.menu-wrap {
+  position: absolute;
+  z-index: 20;
+  width: 300px;
+  height: 100vh;
+  -webkit-transform: translate3d(-280px, 0, 0);
+  transform: translate3d(-300px, 0, 0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  border: 5px solid rgb(207, 51, 147);
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menu {
+  position: relative;
+  z-index: 30;
+  padding: 2em 1em 0;
+  border: 5px solid yellow;
+}
+
+.menu,
+.close-button {
+  /* opacity: 0; */
+  -webkit-transform: translate3d(-160px, 0, 0);
+  transform: translate3d(-160px, 0, 0);
+  -webkit-transition: opacity 0s 0.3s, -webkit-transform 0s 0.3s;
+  transition: opacity 0s 0.3s, transform 0s 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.1, 1.27);
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.1, 1.27);
+}
+
+/* ----------------------- */
+
+/* Close Button */
+.close-button {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  /* overflow: hidden; */
+  /* text-indent: 16px; */
+  border: none;
+  z-index: 100;
+  /* background: red; */
+  color: transparent;
+}
+
+/* 
+.close-button::before,
+.close-button::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	background: #888;
+}
+
+.close-button::before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.close-button::after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+} */
+/* close end */
+
+/*----------------Morph Shape--------------------- */
+.morph-shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  fill: black;
+}
+
+/* Shown menu */
+/* .show-menu .menu-wrap,
+.show-menu .content::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+} */
+
+.show-menu .menu-wrap,
+.show-menu .menu,
+.show-menu .close-button,
+.show-menu .morph-shape,
+.show-menu .content::before {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.show-menu .menu,
+.show-menu .close-button {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.show-menu .content::before {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+/* *******************************************************/
+/* copied code for nav bar ends*/
+/* **************************************************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #324455;
+}
+
+/* sections */
+.sections {
+  display: none;
+}
+.backgroundRed {
+  background: green;
+}
+/*  */
+
+/* *********************************************************************** */
+/* About section */
+/* ************************************************************************ */
+
+.about {
+  margin-top: 1.5rem;
+  min-height: 100vh;
+}
+
+.textcontainer {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 60%;
+  min-height: 80vh;
+  border-radius: 4px;
+  padding: 40px 80px;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.2rem;
+  font-family: roboto;
+  overflow-y: none;
+}
+
+.about h2 {
+  font-family: poppins;
+  font-size: 3rem;
+}
+
+.about p {
+  padding-top: 1rem;
+}
+
+/* ************************************************************************* */
+/* Projects section start */
+/* ************************************************************************* */
+.projects {
+  border: 2px solid salmon;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 2vh;
+}
+
+.projects h2 {
+  padding-bottom: 20px;
+  font-size: 2.2rem;
+  font-family: poppins;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.projectTiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid pink; */
+}
+
+.card {
+  border: 3px solid rgb(189, 77, 120);
+  border-radius: 4px;
+  width: 27%;
+  min-width: 300px;
+  /* flex-basis: 300px; */
+  height: auto;
+  margin: 2.2%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.cardTitle {
+  /* font-size: 1.3rem; */
+  font-weight: lighter;
+  font-family: poppins, sans-serif;
+  background: rgb(214, 214, 132);
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: rgb(92, 187, 92);
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+/* ********************************************************************* */
+/* skills section */
+/* ********************************************************************* */
+.skills {
+  height: 100vh;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+.skills h3 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+/* ---------------------------------- */
