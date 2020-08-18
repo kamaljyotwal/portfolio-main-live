@@ -6,23 +6,26 @@
     <link rel="stylesheet" href="./page1.css" />
     <script src="./snap.svg-min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <main>
       <!-- ==================================================================== -->
-      <!--copied data  -->
+      <!--copied side nav  -->
       <!-- =================================================================== -->
       <button class="menu-button" id="open-button"></button>
       <div class="menu-wrap">
         <nav class="menu">
           <div class="listContent">
-            <a href="#" class="innerlink" onclick="openCity(event, 'aboutsectionid')">About</a>
+            <a href="../../index.htm" class="innerlink">Home</a>
+            <a href="#" class="innerlink" onclick="openCity(event, 'projectsectionid')">Projects</a>
             <a href="#" class="innerlink active" onclick="openCity(event, 'skillsectionid')"
               >Skills</a
             >
-            <a href="#" class="innerlink" onclick="openCity(event, 'projectsectionid')">Projects</a>
-
             <a href="#" class="innerlink">Certificates</a>
             <a href="#" class="innerlink">Contact</a>
           </div>
@@ -45,22 +48,45 @@
         </div>
       </div>
       <!-- ======================================================================= -->
-      <!--copied data  end-->
+      <!--copied nav end-->
       <!-- ========================================================================== -->
 
+      <!-- about section -->
       <section class="about sections w3-container w3-animate-opacity" id="aboutsectionid">
         <div class="textcontainer">
-          <h2>About</h2>
+          <div class="flipBox">
+            <div class="innermain">
+              <div class="frontFace">
+                <img src="https://i.postimg.cc/50dRTsgk/dd.jpg" width="100%" />
+              </div>
+              <div class="backFace">
+                <p>Kamal Jyotwal</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="sectionheadingAbout">About</h2>
+          <hr />
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eius voluptate
-            ullam accusantium maiores, quos perspiciatis quaerat modi iure suscipit molestias,
-            labore tenetur voluptatum dignissimos quisquam recusandae inventore voluptatibus is
-            pariatur amet. Dolore rerum nostrum labore corporis repella Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Blanditiis, vel.
+            Hi, After completing my graduation last year in Computer Science from a top engineering
+            collage of Delhi, as i was looking for viable career options i felt inclination towards
+            development and front-End and started learning, and since then i have been working with
+            these technologies day and night.
+            <br />
+
+            <br />
+            I have developed various standalone website features which can be seen on my codepen
+            account i have gained various certificates from FCC after completing hundreds of hours
+            of coursework.
+            <br /><br /><br />
+            I am looking for a oppurtunity as fulltime Developer/freelancer where i can put my skill
+            to use with and get compensated well for it without being micromanaged. The goal now is
+            to get expertise in M.E.R.N stack. The skillset and projects can be viewed in their
+            respective sections.
           </p>
         </div>
       </section>
 
+      <!-- project section -->
       <section class="projects sections w3-animate-opacity" id="projectsectionid">
         <h2>Projects</h2>
         <div class="projectTiles">

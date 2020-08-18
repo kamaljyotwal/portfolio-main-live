@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Kamal</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Kamal</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <!-- profile card start -->
-  <section class="cardContainer">
-    <div class="card">
-      <!-- flipping image -->
-      <div class="flipBox">
-        <div class="innermain">
-          <div class="frontFace">
-            <img src="https://i.postimg.cc/50dRTsgk/dd.jpg" width="100%" />
-          </div>
-          <div class="backFace">
-            <p>Kamal Jyotwal</p>
+  <body>
+    <!-- profile card start -->
+    <section class="cardContainer">
+      <div class="card">
+        <!-- flipping image -->
+        <div class="flipBox">
+          <div class="innermain">
+            <div class="frontFace">
+              <img src="https://i.postimg.cc/50dRTsgk/dd.jpg" width="100%" />
+            </div>
+            <div class="backFace">
+              <p>Kamal Jyotwal</p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- flipping image end -->
+        <!-- flipping image end -->
 
-      <!-- tilted bar -->
-      <div class="innerdiv"></div>
-      <!-- bar end -->
+        <!-- tilted bar -->
+        <div class="innerdiv"></div>
+        <!-- bar end -->
 
-      <!-- text inside bar -->
-      <div class="introtextcontainer">
-        <span class="introP">Developer | Engineer | Learner</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, rveniam?
-          Perspiciatis, dolores. Lorem.
-        </p>
-      </div>
-      <!-- text inside bar end -->
+        <!-- text inside bar -->
+        <div class="introtextcontainer">
+          <span class="introP">Developer | Software Engineer | Learner</span>
+          <p>
+            "I help and teach others how to bring excellence and quality in their software
+            products."
+          </p>
+        </div>
+        <!-- text inside bar end -->
 
-      <!-- Main text div inside card {name:maintextcard}-->
-      <div class="textincard">
-        <!-- name pill with horizontal rule -->
-        <div class="nameincardwithHr">
-          <div class="nameincard">
-            <p>Kamal Jyotwal</p>
+        <!-- Main text div inside card {name:maintextcard}-->
+        <div class="textincard">
+          <!-- name pill with horizontal rule -->
+          <div class="nameincardwithHr">
+            <div class="nameincard">
+              <p>Kamal Jyotwal</p>
+            </div>
+            <hr class="hr1" />
+            <hr class="hr2" />
           </div>
-          <hr class="hr1" />
-          <hr class="hr2" />
+          <!-- name pill end -->
+
+          <p class="maintextbio">
+            I like coding and exploring new technologies. Currently looking for FrontEnd Web
+            Development role.<br />
+            <br />
+            Reach me out on the links below.
+          </p>
+
+          <div class="nameincardwithHr">
+            <a href="./src/page1/page1.html" class="secondpillbutton">Find more</a>
+            <hr class="hr1" />
+            <hr class="hr2" />
+          </div>
         </div>
-        <!-- name pill end -->
+        <!--maintextcard end -->
 
-        <p class="maintextbio">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum et earum consectetur
-          provident blanditiis aut maiores vitae accusamus, perspiciatis accusantium.
-        </p>
-
-        <div class="nameincardwithHr">
-          <a href="./src/page1/page1.html" class="secondpillbutton">Find more</a>
-          <hr class="hr1" />
-          <hr class="hr2" />
+        <div class="contactIcons">
+          <a href="https://www.linkedin.com/in/kjyotwal" target="_blank"
+            ><i class="fa fa-linkedin-square fa-2x sociallinks"></i
+          ></a>
+          <a href="https://wa.me/918851530558" target="_blank"
+            ><i class="fa fa-whatsapp fa-2x sociallinks"></i
+          ></a>
+          <!-- <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="https://wa.me/918851530558"
+            ><i class="fa fa-whatsapp fa-2x sociallinks"></i
+          ></a> -->
+          <a href="mailto: kkj.formal@gmail.com"
+            ><i class="fa fa-envelope fa-2x sociallinks"></i
+          ></a>
         </div>
       </div>
-      <!--maintextcard end -->
-    </div>
-  </section>
-  <!-- profile card end -->
-  
-  <!-- anime.js cdn -->
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
-  <script src="index.js"></script>
-</body>
+    </section>
+    <!-- profile card end -->
 
+    <!-- anime.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
 </html>

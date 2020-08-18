@@ -200,49 +200,121 @@ body {
 }
 
 /* sections */
-.sections {
+/* .sections {
   display: none;
-}
+} */
 .backgroundRed {
   background: green;
 }
 /*  */
 
+/* Circle image above Bar */
+.flipBox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+  /* position: absolute; */
+  /* 
+  top: 100%; */
+  /* margin: 0 auto; */
+  top: -50px;
+  /* transform: rotate(15deg); */
+  /* */
+  /*   border: 2px solid red; */
+  /*   background-color: transparent; */
+  z-index: 10;
+}
+
+.innermain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 400ms;
+  transform-style: preserve-3d;
+}
+.frontFace,
+.backFace {
+  position: absolute;
+  backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.frontFace img {
+  /* overflow: hidden; */
+  border-radius: 50%;
+}
+.frontFace {
+  border: 8px solid #dd5c4e;
+}
+.backFace {
+  font-size: 1rem;
+  font-family: poppins;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotatey(180deg);
+  text-align: center;
+  border: 8px solid #b8382a;
+}
+.flipBox:hover .innermain {
+  transform: rotatey(180deg);
+}
+/* image in circle end */
 /* *********************************************************************** */
 /* About section */
 /* ************************************************************************ */
 
 .about {
-  margin-top: 1.5rem;
+  margin-top: 4.5rem;
   min-height: 100vh;
+  background: #324457;
 }
-
 .textcontainer {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 60%;
+  position: relative;
+  background-color: #d86255;
+  width: 70%;
   min-height: 80vh;
   border-radius: 4px;
-  padding: 40px 80px;
+  padding: 30px 80px;
   margin: 0 auto;
   color: white;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   font-family: roboto;
   overflow-y: none;
+  /* font-family: Philosopher; */
+  font-family: caveat;
 }
 
 .about h2 {
-  font-family: poppins;
+  font-family: Roboto;
   font-size: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
-.about p {
+.about .textcontainer p {
   padding-top: 1rem;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  /* text-align: center; */
 }
-
+.about hr {
+  width: 40%;
+  margin: 5px 0;
+}
 /* ************************************************************************* */
 /* Projects section start */
 /* ************************************************************************* */
 .projects {
+  display: none;
   border: 2px solid salmon;
   min-height: 100vh;
   width: 100%;
@@ -312,6 +384,7 @@ body {
 /* skills section */
 /* ********************************************************************* */
 .skills {
+  display: none;
   height: 100vh;
   width: 100%;
   /* border: 2px solid white; */
