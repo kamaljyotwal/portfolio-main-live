@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./page1.css" />
     <script src="./snap.svg-min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
@@ -14,20 +13,30 @@
 
   <body>
     <main>
-      <!-- ==================================================================== -->
+      <!-- ======================================================= -->
       <!--copied side nav  -->
-      <!-- =================================================================== -->
-      <button class="menu-button" id="open-button"></button>
+      <!-- ======================================================= -->
+      <!-- <button class="menu-button" id="open-button">button</button> -->
+      <div class="menu-button" id="open-button" onclick="toggleclass(this)">
+        <div class="bar its1"></div>
+        <div class="bar its2"></div>
+        <div class="bar its3"></div>
+      </div>
       <div class="menu-wrap">
         <nav class="menu">
           <div class="listContent">
             <a href="../../index.htm" class="innerlink">Home</a>
-            <a href="#" class="innerlink" onclick="openCity(event, 'projectsectionid')">Projects</a>
-            <a href="#" class="innerlink active" onclick="openCity(event, 'skillsectionid')"
+            <a href="#" class="innerlink" onclick="openSection(event, 'projectsectionid')"
+              >Projects</a
+            >
+            <a href="#" class="innerlink active" onclick="openSection(event, 'skillsectionid')"
               >Skills</a
             >
-            <a href="#" class="innerlink">Certificates</a>
-            <a href="#" class="innerlink">Contact</a>
+            <a href="#" class="innerlink" onclick="openSection(event, 'skillsectionid')"
+              >Certificates</a
+            >
+            <a href="#" class="innerlink" onclick="openSection(event, 'skillsectionid')">Contact</a>
+            <a href="#" class="innerlink" onclick="openSection(event, 'aboutsectionid')">About</a>
           </div>
         </nav>
         <button class="close-button" id="close-button"></button>
@@ -47,12 +56,12 @@
           </svg>
         </div>
       </div>
-      <!-- ======================================================================= -->
+      <!-- =================================== -->
       <!--copied nav end-->
-      <!-- ========================================================================== -->
+      <!-- =================================== -->
 
       <!-- about section -->
-      <section class="about sections w3-container w3-animate-opacity" id="aboutsectionid">
+      <section class="about sections" id="aboutsectionid">
         <div class="textcontainer">
           <div class="flipBox">
             <div class="innermain">
@@ -87,7 +96,7 @@
       </section>
 
       <!-- project section -->
-      <section class="projects sections w3-animate-opacity" id="projectsectionid">
+      <section class="projects sections" id="projectsectionid">
         <h2>Projects</h2>
         <div class="projectTiles">
           <div class="card">
@@ -101,6 +110,7 @@
             <h3 class="cardTitle">Travel Agency Site</h3>
             <div class="cardcontent">
               <img src="./photos/travel.png" alt="" />
+
               <a href="#">See Live</a>
             </div>
           </div>
@@ -150,7 +160,7 @@
       </section>
 
       <!-- skills section -->
-      <section class="skills sections w3-container w3-animate-opacity" id="skillsectionid">
+      <section class="skills sections" id="skillsectionid">
         <h3>Skills</h3>
         <div class="skillscontainer">
           <div class="chip">

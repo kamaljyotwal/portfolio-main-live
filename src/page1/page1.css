@@ -1,7 +1,3 @@
-/* ************************************************* */
-/* copied nav bar */
-/* ************************************************* */
-
 html,
 body {
   /* overflow: hidden; */
@@ -11,24 +7,57 @@ body {
   margin: 0;
   padding: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #243342;
+}
+
+/*  */
+/* ************************************************* */
+/* copied nav bar */
+/* ************************************************* */
 
 /* Menu Button */
 .menu-button {
-  position: fixed;
-  z-index: 10;
-  margin: 1em;
-  padding: 0;
-  width: 3em;
-  height: 2.5em;
+  position: absolute;
+  top: 1rem;
+  margin: 1.5rem 2rem;
+  z-index: 20;
+  /* margin: 1em; */
+  /* width: 3em;
+  height: 2.5em; */
   border: none;
   /* text-indent: 2.5em; */
   font-size: 1em;
-  color: transparent;
-  background: transparent;
+  /* color: white; */
+  /* background: black; */
   /* border: 1px solid red; */
 }
-
-.menu-button::before {
+.bar {
+  background-color: #fccdc8;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  transition: 470ms;
+}
+/* .change .its2 {
+  opacity: 0;
+}
+.change .its1 {
+  transform: rotate(45deg) translate(9px, 7px);
+}
+.change .its3 {
+  transform: rotate(-45deg) translate(8px, -7px);
+}
+.change .its2 {
+  opacity: 0;
+} */
+/* .menu-button::before {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
@@ -45,32 +74,14 @@ body {
     #373a47 80%
   );
   content: "";
-}
+} */
 
 .menu-button:hover {
   opacity: 0.6;
 }
-
 /* --------------------- */
-/* nav title */
-.menu-wrap a {
-  color: yellow;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-family: sans-serif;
-  display: block;
-  padding: 0.8em;
-}
 
-.menu-wrap a:hover,
-.menu-wrap a:focus {
-  color: #c94e50;
-}
-/*  */
-/* main{
-  position: relative;
-} */
-/* Menu */
+/*-------- Menu------------- */
 .menu-wrap {
   position: absolute;
   z-index: 20;
@@ -80,7 +91,8 @@ body {
   transform: translate3d(-300px, 0, 0);
   -webkit-transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
-  border: 5px solid rgb(207, 51, 147);
+  /* border: 5px solid rgb(207, 51, 147); */
+  box-shadow: 2px 0 3px rgb(77, 77, 77);
   left: 0;
   top: 0;
   bottom: 0;
@@ -90,7 +102,8 @@ body {
   position: relative;
   z-index: 30;
   padding: 2em 1em 0;
-  border: 5px solid yellow;
+  /* border: 5px solid yellow; */
+  margin-top: 1rem;
 }
 
 .menu,
@@ -103,8 +116,39 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.1, 1.27);
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.1, 1.27);
 }
-
 /* ----------------------- */
+
+/* nav title */
+.innerlink {
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  display: block;
+  padding: 0.8em;
+  padding-left: 1rem;
+  /* border: 1px solid yellow; */
+}
+.innerlink::after {
+  content: "";
+  display: block;
+  height: 2px;
+  /* transform: scaleX(0); */
+  width: 0%;
+  background: white;
+  transition: all 250ms;
+  margin-top: 3px;
+}
+.innerlink:hover::after {
+  /* transform: scaleX(1); */
+  width: 40%;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+  opacity: 0.8;
+}
+/* ---------------- */
 
 /* Close Button */
 .close-button {
@@ -152,7 +196,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  fill: black;
+  fill: #2fa096;
 }
 
 /* Shown menu */
@@ -189,26 +233,10 @@ body {
 /* *******************************************************/
 /* copied code for nav bar ends*/
 /* **************************************************** */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background: #324455;
-}
-
-/* sections */
-/* .sections {
-  display: none;
-} */
-.backgroundRed {
-  background: green;
-}
-/*  */
-
-/* Circle image above Bar */
+/* ********************************************************* */
+/* circle image*/
+/* ********************************************************** */
 .flipBox {
   position: absolute;
   left: 50%;
@@ -268,21 +296,24 @@ body {
   transform: rotatey(180deg);
 }
 /* image in circle end */
+
 /* *********************************************************************** */
 /* About section */
 /* ************************************************************************ */
-
 .about {
   margin-top: 4.5rem;
   min-height: 100vh;
-  background: #324457;
+  background: #243342;
+  /* border: 5px solid seagreen; */
+  /* position: unset; */
 }
 .textcontainer {
+  /* border: 5px solid yellow; */
   position: relative;
   background-color: #d86255;
   width: 70%;
   min-height: 80vh;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 30px 80px;
   margin: 0 auto;
   color: white;
@@ -310,28 +341,16 @@ body {
   width: 40%;
   margin: 5px 0;
 }
+
 /* ************************************************************************* */
 /* Projects section start */
 /* ************************************************************************* */
 .projects {
-  display: none;
-  border: 2px solid salmon;
+  /* display: none; */
   min-height: 100vh;
   width: 100%;
-  padding-top: 2vh;
+  border: 5px solid salmon;
 }
-
-.projects h2 {
-  padding-bottom: 20px;
-  font-size: 2.2rem;
-  font-family: poppins;
-  font-weight: lighter;
-  color: white;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
 .projectTiles {
   display: flex;
   flex-wrap: wrap;
@@ -339,43 +358,49 @@ body {
   flex-grow: 1;
   width: 90%;
   margin: auto;
-  /* border: 1px solid pink; */
+  /* border: 2px solid yellow; */
 }
-
 .card {
-  border: 3px solid rgb(189, 77, 120);
+  border: 2px solid rgb(189, 77, 120);
   border-radius: 4px;
   width: 27%;
   min-width: 300px;
   /* flex-basis: 300px; */
   height: auto;
-  margin: 2.2%;
+  margin: 2%;
   overflow: hidden;
 }
-
 .card img {
   width: 100%;
   height: auto;
 }
-
 .cardTitle {
-  /* font-size: 1.3rem; */
+  font-size: 1.3rem;
   font-weight: lighter;
   font-family: poppins, sans-serif;
-  background: rgb(214, 214, 132);
-  padding: 5px 20px;
+  background: #d4625a;
+  padding: 11px 10px;
   text-align: center;
+  color: white;
 }
 
+.projects h2 {
+  font-size: 2.2rem;
+  font-family: roboto;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
 .cardcontent {
   display: flex;
   flex-direction: column;
 }
-
 .card a {
   text-decoration: none;
-  background-color: rgb(92, 187, 92);
+  background-color:rgb(114, 209, 114);
   padding: 8px;
+  font-family: roboto;
   text-align: center;
   color: white;
 }
@@ -414,4 +439,4 @@ body {
   width: 50px;
   border-radius: 50%;
 }
-/* ---------------------------------- */
+/* ------------------------------skill end------------------------------------ */
