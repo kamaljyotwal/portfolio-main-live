@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Srisakdi:wght@400;700&display=swap");
+
 html,
 body {
   /* overflow: hidden; */
@@ -14,7 +16,7 @@ body {
 }
 
 body {
-  background: #243342;
+  /* background: #243342; */
 }
 
 /*  */
@@ -137,7 +139,7 @@ body {
   width: 0%;
   background: white;
   transition: all 250ms;
-  margin-top: 3px;
+  margin-top: 6px;
 }
 .innerlink:hover::after {
   /* transform: scaleX(1); */
@@ -301,7 +303,7 @@ body {
 /* About section */
 /* ************************************************************************ */
 .about {
-  margin-top: 4.5rem;
+  padding-top: 4.5rem;
   min-height: 100vh;
   background: #243342;
   /* border: 5px solid seagreen; */
@@ -325,17 +327,21 @@ body {
 }
 
 .about h2 {
-  font-family: Roboto;
-  font-size: 3rem;
+  font-family: poppins;
+  font-size: 2.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
+  /* border: 1px solid yellow; */
+  margin-top: 0.5rem;
 }
 
 .about .textcontainer p {
   padding-top: 1rem;
-  font-family: sans-serif;
-  font-size: 1.1rem;
-  /* text-align: center; */
+  font-family: poppins;
+  font-weight: 300;
+  font-size: 1.05rem;
+  /* border: 1px solid yellow; */
+  margin-bottom: 2rem;
 }
 .about hr {
   width: 40%;
@@ -345,64 +351,123 @@ body {
 /* ************************************************************************* */
 /* Projects section start */
 /* ************************************************************************* */
-.projects {
-  /* display: none; */
+.newprojectsection {
+  display: none;
   min-height: 100vh;
-  width: 100%;
-  border: 5px solid salmon;
+  background: rgb(47, 160, 150);
+  background: linear-gradient(309deg, hsla(175, 55%, 41%, 0.5) 22%, rgba(255, 255, 255, 1) 85%);
+}
+.newprojectsection hr {
+  width: 30%;
+  background-color: #28726c;
+  margin: 0 auto 1rem;
+}
+.projectitle {
+  font-size: 2.3rem;
+  font-family: poppins;
+  font-weight: bold;
+  color: #28726c;
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
 }
 .projectTiles {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   flex-grow: 1;
-  width: 90%;
+  flex-shrink: 1;
   margin: auto;
-  /* border: 2px solid yellow; */
 }
-.card {
-  border: 2px solid rgb(189, 77, 120);
+.snip1336 {
+  font-family: "Roboto", Arial, sans-serif;
+  /* border: 1px solid #243241; */
   border-radius: 4px;
-  width: 27%;
-  min-width: 300px;
-  /* flex-basis: 300px; */
-  height: auto;
-  margin: 2%;
+  box-shadow: 1px 5px 8px 2px rgb(156, 156, 156);
+  position: relative;
   overflow: hidden;
+  margin: 3rem 0;
+  min-width: 300px;
+  max-width: 550px;
+  width: 27%;
+  background-color: #fafafa;
+  /* color: black; */
+  text-align: left;
+  line-height: 1.4em;
+  /* background-color: #2980b9; */
 }
-.card img {
-  width: 100%;
-  height: auto;
-}
-.cardTitle {
-  font-size: 1.3rem;
-  font-weight: lighter;
-  font-family: poppins, sans-serif;
-  background: #d4625a;
-  padding: 11px 10px;
-  text-align: center;
-  color: white;
+.snip1336 h2 {
+  font-size: 1.6rem;
 }
 
-.projects h2 {
-  font-size: 2.2rem;
-  font-family: roboto;
-  color: white;
+.snip1336 img {
+  max-width: 100%;
+  /* vertical-align: top; */
+  object-fit: cover;
+  opacity: 0.85;
+  /* box-shadow: 0 0 5px 5px red inset; */
+  /* padding: 5px; */
+}
+.snip1336 figcaption {
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  padding: 1rem 25px 25px;
+  position: relative;
+}
+.snip1336 figcaption:before {
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 0 0 450px;
+  border-color: transparent transparent transparent rgb(250, 250, 250);
+}
+.snip1336 figcaption a {
+  padding: 5px;
+  border: 1px solid #c55549;
+  color: #c55549;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-.cardcontent {
-  display: flex;
-  flex-direction: column;
-}
-.card a {
   text-decoration: none;
-  background-color:rgb(114, 209, 114);
-  padding: 8px;
-  font-family: roboto;
-  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 100ms linear;
+}
+.info:hover {
   color: white;
+  background: #c55549;
+}
+.snip1336 figcaption a:hover {
+  opacity: 1;
+}
+.snip1336 .follow {
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.follow:hover {
+  color: white;
+  background: #2980b9;
+}
+.snip1336 h2 {
+  margin: 5px 0 1rem;
+  font-weight: 300;
+}
+.snip1336 p {
+  /* margin:0 0 10px 0; */
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 /* ********************************************************************* */
