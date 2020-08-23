@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Srisakdi:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 html,
 body {
   /* overflow: hidden; */
@@ -15,9 +15,9 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  /* background: #243342; */
-}
+/* body {
+  background: #243342;
+} */
 
 /*  */
 /* ************************************************* */
@@ -303,6 +303,7 @@ body {
 /* About section */
 /* ************************************************************************ */
 .about {
+  display: none;
   padding-top: 4.5rem;
   min-height: 100vh;
   background: #243342;
@@ -384,8 +385,8 @@ body {
 .snip1336 {
   font-family: "Roboto", Arial, sans-serif;
   /* border: 1px solid #243241; */
-  border-radius: 4px;
-  box-shadow: 1px 5px 8px 2px rgb(156, 156, 156);
+  border-radius: 3px;
+  box-shadow: 1px 5px 5px 2px rgb(155, 155, 155);
   position: relative;
   overflow: hidden;
   margin: 3rem 0;
@@ -470,31 +471,45 @@ body {
   opacity: 0.8;
 }
 
-/* ********************************************************************* */
+/* *********************************************************** */
 /* skills section */
-/* ********************************************************************* */
+/* *********************************************************** */
 .skills {
   display: none;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  /* border: 2px solid white; */
+  /* border: 2px solid yellow; */
+  background: #243342;
+  padding-bottom: 5rem;
 }
 
 .skills h3 {
+  /* border: 2px solid orange; */
   color: white;
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-align: center;
-  margin: 3rem;
+  font-family: poppins;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 2rem 0 0.2rem;
 }
-
+.skills hr {
+  width: 20%;
+  margin: 0 auto 1rem;
+}
 .chip {
   display: inline-block;
   padding: 0 25px;
   height: 50px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 50px;
   border-radius: 25px;
   background-color: #f1f1f1;
+  font-family: roboto, sans-serif;
+  color: #272727;
+  /* border: 2px solid red; */
+  overflow: hidden;
+  margin: 0 2px;
 }
 
 .chip img {
@@ -504,4 +519,205 @@ body {
   width: 50px;
   border-radius: 50%;
 }
-/* ------------------------------skill end------------------------------------ */
+.bigimagechip img {
+  padding: 2px;
+}
+.chipsalone {
+  /* border: 2px solid red; */
+  margin: 0 2px;
+}
+.sectionsInContainer {
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.skillscontainer .sectionsInContainer h4 {
+  color: white;
+  font-weight: lighter;
+  font-family: roboto, sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 2px;
+}
+/* --------------skills end----------------- */
+
+/* ***************************************************** */
+/* Contact Section  */
+/* ****************************************************** */
+.contact {
+  background: #243342;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.contact h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1.1rem 0 0.3rem;
+  color: white;
+}
+.contact hr {
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.socialvr {
+  width: 2px;
+  height: 150px;
+  background-color: #f1f1f1;
+  position: absolute;
+  left: 50%;
+  transform: skew(-20deg);
+  z-index: 10;
+}
+
+.socialformContainer {
+  position: relative;
+  /* border: 5px dotted rgb(160, 230, 70); */
+  display: flex;
+  flex-wrap: wrap;
+}
+/*-------------social links-------------*/
+.sociallink {
+  /* background: yellow; */
+  flex-grow: 2;
+  flex-shrink: 2;
+  /* width: 40%; */
+}
+.thelinks {
+  display: grid;
+  grid-gap: 3px;
+  margin: 3rem 5rem 0;
+  grid-template-columns: auto auto auto auto auto auto;
+  /* grid-template-rows: 60px 50px 50px 80px; */
+  padding: 5rem 0;
+}
+.thelinks .thelinkslink {
+  font-size: 1.05rem;
+  font-family: roboto;
+  background: #eee;
+  text-decoration: none;
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 1.5rem;
+}
+.codepen {
+  grid-column: 1/7;
+}
+.FreeCodeCamp {
+  grid-column: 1/5;
+}
+.FreeCodeCampForum {
+  grid-column: 5/7;
+}
+.StackOverFlow {
+  grid-column: 1/2;
+}
+.linkedin {
+  grid-column: 2/7;
+}
+.Github {
+  grid-column: 1/7;
+}
+
+/* social links end */
+
+/*----------------Form styling------------------- */
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  /* background: red; */
+  flex-grow: 3;
+  flex-shrink: 3;
+  width: 350px;
+  margin: 3rem 2rem 0;
+  padding: 2rem 0;
+  font-size: 1rem;
+  height: 75vh;
+  /* transition-timing-function: ease; */
+  font-family: "Source Sans Pro";
+}
+.form {
+  /* border: 1px solid yellow; */
+  width: 80%;
+  margin: 1.5rem auto 1.5rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.formSuccess h1 {
+  transform: translateY(100px);
+}
+.container h1 {
+  font-size: 2.5rem;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+}
+.container input,
+.container textarea,
+.container button {
+  /* display: block; */
+  margin: 4px 0;
+  outline: none;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 400ms;
+  font-size: 1rem;
+}
+::placeholder {
+  color: white;
+  opacity: 0.8;
+  font-size: 1rem;
+  font-family: "Source Sans Pro";
+}
+:focus::placeholder {
+  color: #50a3a2;
+  font-size: 1rem;
+  font-family: "Source Sans Pro";
+}
+.form input {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  width: 90%;
+}
+.form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.form input:focus {
+  background-color: white;
+  width: 100%;
+  color: #53e3a6;
+}
+.form textarea {
+  font-family: "Source Sans Pro";
+  padding: 10px 15px;
+  width: 90%;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form textarea:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.form textarea:focus {
+  background: white;
+  width: 100%;
+}
+.form button {
+  padding: 10px 15px;
+  width: 90%;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  color: #53e3a6;
+  cursor: pointer;
+  font-size: 18px;
+}
+.form button:hover {
+  background-color: #dfdfdf;
+}
+/* form end */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./page1.css" />
     <script src="./snap.svg-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -28,10 +29,12 @@
             <a href="#" class="innerlink active" onclick="openSection(event, 'skillsectionid')"
               >Skills</a
             >
-            <a href="#" class="innerlink" onclick="openSection(event, 'skillsectionid')"
+            <a href="#" class="innerlink" onclick="openSection(event, 'projectsectionid')"
               >Certificates</a
             >
-            <a href="#" class="innerlink" onclick="openSection(event, 'skillsectionid')">Contact</a>
+            <a href="#" class="innerlink" onclick="openSection(event, 'contactsectionid')"
+              >Contact</a
+            >
             <a href="#" class="innerlink" onclick="openSection(event, 'aboutsectionid')">About</a>
           </div>
         </nav>
@@ -92,7 +95,6 @@
       </section>
 
       <!-- project section -->
-
       <section class="newprojectsection sections" id="projectsectionid">
         <h2 class="projectitle">Projects</h2>
         <hr />
@@ -188,51 +190,154 @@
       <!-- skills section -->
       <section class="skills sections" id="skillsectionid">
         <h3>Skills</h3>
+        <hr />
         <div class="skillscontainer">
-          <div class="chip">
-            <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
-            HTML 5
+          <div class="sectionsInContainer">
+            <h4>Technologies of Web</h4>
+            <div class="chip">
+              <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
+              HTML 5
+            </div>
+            <div class="chip">
+              <img src="../photos/icons/css.png" alt="Person" width="96" height="96" />
+              CSS 3
+            </div>
+            <div class="chip">
+              <img src="../photos/icons/js2.png" alt="Person" width="96" height="96" />
+              JAVASCRIPT + ES6
+            </div>
           </div>
-          <div class="chip">
-            <img src="./photos/html.png" alt="Person" width="96" height="96" />
-            CSS 3
+          <div class="sectionsInContainer">
+            <h4>Css Styling Framework</h4>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/bootstrap.png" alt="Person" width="96" height="96" />
+              BOOTSTRAP
+            </div>
+            <div class="chip">
+              <img
+                src="../photos/icons/Materialize-CSS-01.png"
+                alt="Person"
+                width="96"
+                height="96"
+              />
+              MATERIALIZE
+            </div>
           </div>
-          <div class="chip">
-            <img src="./photos/html.png" alt="Person" width="96" height="96" />
-            JAVASCRIPT
+          <div class="sectionsInContainer">
+            <h4>Javascript Library</h4>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/react.png" alt="Person" width="96" height="96" />
+              REACT
+            </div>
           </div>
-          <div class="chip">
-            <img src="./photos/html.png" alt="Person" width="96" height="96" />
-            BOOTSTRAP
+          <div class="sectionsInContainer">
+            <h4>State Management</h4>
+            <div class="chip">
+              <img src="../photos/icons/redux2.png" alt="Person" width="96" height="96" />
+              REDUX
+            </div>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/context2.png" alt="Person" width="96" height="96" />
+              Context API
+            </div>
           </div>
-          <div class="chip">
-            <img src="./photos/html.png" alt="Person" width="96" height="96" />
-            MATERIALIZE
+          <div class="sectionsInContainer">
+            <h4>Version Control</h4>
+            <div class="chip">
+              <img src="../photos/icons/github2.png" alt="Person" width="96" height="96" />
+              GITHUB
+            </div>
+            <div class="chip">
+              <img src="../photos/icons/git2.jpg" alt="Person" width="96" height="96" />
+              Git (Version Control)
+            </div>
           </div>
-          <div class="chip">
-            <img src="./photos/html.png" alt="Person" width="96" height="96" />
-            REACT
+          <div class="sectionsInContainer">
+            <h4>CSS Pre-processors</h4>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" />
+              SCSS
+            </div>
           </div>
-          <div class="chip">
-            <img src="./photos/html.png" alt="Person" width="96" height="96" />
-            REDUX
-          </div>
-          <div class="chip">
-            <img src="./photos/html.png" alt="Person" width="96" height="96" />
-            GITHUB
-          </div>
-          <div class="chip">
-            <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
-            SCSS
+          <div class="sectionsInContainer">
+            <h4>Others</h4>
+            <div class="chip chipsalone">
+              <!-- <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" /> -->
+              DOM Maniputation
+            </div>
+            <div class="chip chipsalone">
+              CSS Flexbox
+            </div>
+            <div class="chip chipsalone">
+              CSS Grid
+            </div>
+            <div class="chip chipsalone">
+              Responsive Design
+            </div>
+            <div class="chip chipsalone">
+              OOPS
+            </div>
+            <div class="chip chipsalone">
+              REACT Hooks
+            </div>
+            <div class="chip chipsalone">
+              Functional Programming
+            </div>
           </div>
         </div>
       </section>
       <!-- skills section ends-->
       <section class="certificates"></section>
-      <section class="social"></section>
-      <section class="contact"></section>
+
+      <!-- ***************************************************** -->
+      <!-- contact section -->
+      <!-- ****************************************************88 -->
+      <section class="contact" id="contactsectionid">
+        <h2>Social</h2>
+        <hr />
+        <div class="socialformContainer">
+          <div class="sociallink">
+            <div class="thelinks">
+              <a href="" class="thelinkslink codepen">Codepen </a>
+              <a href="" class="thelinkslink FreeCodeCamp">FreeCodeCamp</a>
+              <a href="" class="thelinkslink FreeCodeCampForum">FreeCodeCamp Forum</a>
+              <a href="" class="thelinkslink StackOverFlow">StackOverFlow</a>
+              <a href="" class="thelinkslink linkedin">Linkedin</a>
+              <a href="" class="thelinkslink Github">Github </a>
+            </div>
+          </div>
+          <!-- <div class="socialvr">&nbsp;</div> -->
+
+          <div class="container">
+            <h1 class="formheading">Get in Touch</h1>
+            <form class="form">
+              <input type="text" placeholder="Your Name" name="showname" />
+              <textarea
+                name="themessage"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" id="login-button">Login</button>
+            </form>
+          </div>
+        </div>
+        <!-- <footer>
+          This site is still under 🏗️🚧
+        </footer> -->
+      </section>
     </main>
-    
+    <script>
+      $("#login-button").click(themainfunc);
+
+      function themainfunc(event) {
+        event.preventDefault();
+        $(".form").fadeOut(500);
+        $(".container").addClass("formSuccess");
+        $(".formheading").text("Thanks for contacting");
+      }
+    </script>
     <script src="page1.js"></script>
     <script src="./classie.js"></script>
     <script src="./main4.js"></script>
