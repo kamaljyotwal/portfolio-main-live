@@ -18,5 +18,3 @@ function openSection(evt, sectionname) {
     document.getElementById(sectionname).style.display = "block";
     evt.currentTarget.className += " effectOnLinkclickActive";
 }
-
-// jquery

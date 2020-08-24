@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./page1.css" />
+    <link rel="shortcut icon" href="../photos/favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <script src="./snap.svg-min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -14,7 +21,8 @@
       <!--copied side nav  -->
       <!-- ======================================================= -->
       <!-- <button class="menu-button" id="open-button">button</button> -->
-      <div class="menu-button" id="open-button" onclick="toggleclass(this)">
+      <div class="menu-button" id="open-button">
+        <!-- onclick="toggleclass(this)" -->
         <div class="bar its1"></div>
         <div class="bar its2"></div>
         <div class="bar its3"></div>
@@ -22,7 +30,7 @@
       <div class="menu-wrap">
         <nav class="menu">
           <div class="listContent">
-            <a href="../../index.htm" class="innerlink">Home</a>
+            <a href="../../index.htm" class="innerlink innerlinkfirst">Home</a>
             <a href="#" class="innerlink" onclick="openSection(event, 'projectsectionid')"
               >Projects</a
             >
@@ -38,7 +46,9 @@
             <a href="#" class="innerlink" onclick="openSection(event, 'aboutsectionid')">About</a>
           </div>
         </nav>
-        <button class="close-button" id="close-button"></button>
+        <button class="close-button" id="close-button">
+          &times;
+        </button>
         <div
           class="morph-shape"
           id="morph-shape"
@@ -75,21 +85,20 @@
           <h2 class="sectionheadingAbout">About</h2>
           <hr />
           <p>
-            Hi, After completing my graduation last year in Computer Science from a top engineering
-            collage of Delhi, as i was looking for viable career options i felt inclination towards
-            development and front-End and started learning, and since then i have been working with
-            these technologies day and night.
-            <br />
-
-            <br />
-            I have developed various standalone website features which can be seen on my codepen
-            account i have gained various certificates from FCC after completing hundreds of hours
-            of coursework.
+            I completed my graduation degree last year in Computer Science engineering from a
+            reputed university & collage of Delhi After that from various options available i chose
+            to carve a career in development and felt inclination towards Web development and
+            started learning with a goal to get good command over Front-End development and its
+            related technologies Since then i have been working with these technologies day and
+            night. I have gathered some certificates and made some projects along the way some of
+            which can be viewed in the projects section.
+            <br /><br />
+            Besides that i have developed various standalone webpage featureswhich are featured on
+            my codepen account and can be seen.
             <br /><br />
             I am looking for a oppurtunity as fulltime Developer/freelancer where i can put my skill
-            to use with and get compensated well for it without being micromanaged. The goal now is
-            to get expertise in M.E.R.N stack. The skillset and projects can be viewed in their
-            respective sections.
+            to use and get compensated well for it along the way. The next milestone is to get
+            expertise in M.E.R.N stack.
           </p>
         </div>
       </section>
@@ -108,7 +117,7 @@
                 operations.
               </p>
               <a href="#" class="follow">See live</a>
-              <a href="#" class="info">Code</a>
+              <a href="#" class="info">code</a>
             </figcaption>
           </figure>
           <figure class="snip1336">
@@ -292,24 +301,65 @@
       <!-- ***************************************************** -->
       <!-- contact section -->
       <!-- ****************************************************88 -->
-      <section class="contact" id="contactsectionid">
-        <h2>Social</h2>
-        <hr />
+      <section class="contact sections" id="contactsectionid">
+        <div class="custom-shape-divider-bottom-1598182187">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <h2>SOCIAL</h2>
+
+        <hr class="center-ball" />
         <div class="socialformContainer">
           <div class="sociallink">
             <div class="thelinks">
-              <a href="" class="thelinkslink codepen">Codepen </a>
-              <a href="" class="thelinkslink FreeCodeCamp">FreeCodeCamp</a>
-              <a href="" class="thelinkslink FreeCodeCampForum">FreeCodeCamp Forum</a>
-              <a href="" class="thelinkslink StackOverFlow">StackOverFlow</a>
-              <a href="" class="thelinkslink linkedin">Linkedin</a>
-              <a href="" class="thelinkslink Github">Github </a>
+              <a href="https://codepen.io/kamaljyotwal" target="_blank" class="thelinkslink codepen"
+                >Codepen <i class="fa fa-codepen" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.freecodecamp.org/jyotwal"
+                target="_blank"
+                class="thelinkslink FreeCodeCamp"
+                >FreeCodeCamp <i class="fa fa-free-code-camp" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://forum.freecodecamp.org/u/kamaljyotwal/summary"
+                class="thelinkslink FreeCodeCampForum"
+                target="_blank"
+                >FreeCodeCamp Forum <i class="fa fa-free-code-camp" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://stackoverflow.com/users/11308066/kamal-jyotwal"
+                class="thelinkslink StackOverFlow"
+                target="_blank"
+                >StackOverFlow <i class="fa fa-stack-overflow" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/kjyotwal"
+                class="thelinkslink linkedin"
+                target="_blank"
+                >Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
+              <a href="https://github.com/kamaljyotwal" class="thelinkslink Github" target="_blank"
+                >Github <i class="fa fa-github"></i
+              ></a>
+              <a href="#" class="thelinkslink email">
+                kkj.formal@gmail.com <i class="fa fa-envelope-o" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
           <!-- <div class="socialvr">&nbsp;</div> -->
-
           <div class="container">
             <h1 class="formheading">Get in Touch</h1>
+
             <form class="form">
               <input type="text" placeholder="Your Name" name="showname" />
               <textarea
@@ -319,13 +369,10 @@
                 rows="10"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit" id="login-button">Login</button>
+              <button type="submit" id="login-button">Send</button>
             </form>
           </div>
         </div>
-        <!-- <footer>
-          This site is still under 🏗️🚧
-        </footer> -->
       </section>
     </main>
     <script>
