@@ -29,7 +29,7 @@ body {
 .cardContainer {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .card {
   width: 35vw;
@@ -48,11 +48,11 @@ body {
 
 /* Tilted Bar orange  */
 .innerdiv {
-  width: 740px;
+  width: 840px;
   background: #f54e3b;
   opacity: 0.9;
   height: 10rem;
-  transform: translateX(-180px) rotate(-14deg) translateY(145px);
+  transform: translateX(-180px) rotate(-18deg) translateY(135px);
   /* transform: translateX(200px); */
   z-index: 1;
   /* position: absolute; */
@@ -169,13 +169,13 @@ body {
 /*  Text content main*/
 /* ***************************************** */
 .textincard {
-  margin-top: 210px;
-  padding-bottom: 10px;
+  margin-top: 220px;
+  padding-bottom: 20px;
   /* border: 2px solid yellow; */
 }
 .textincard .nameincard {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: light;
   font-family: roboto;
   border: 1x solid #d44b3c;
@@ -284,4 +284,131 @@ hr {
   /* font-size: 5rem; */
   margin: 0 15px;
 }
-/*  */
+
+/******************Media Queries**********************  */
+
+/* for mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card {
+    /* background-color: yellow; */
+    min-width: 50%;
+    width: 70%;
+  }
+  .innerdiv {
+    height: 8rem;
+  }
+  .flipBox {
+    width: 100px;
+    height: 100px;
+    top: 70px;
+  }
+  .innerdiv {
+    transform: translateX(-180px) rotate(-15deg) translateY(100px);
+  }
+  .introtextcontainer {
+    top: 9rem;
+    padding: 5px 10px;
+  }
+  .introP {
+    font-size: 0.9rem;
+  }
+  .introtextcontainer p {
+    font-size: 0.7rem;
+    padding-top: 5px;
+  }
+  .textincard {
+    /* border: 2px solid teal; */
+    margin-top: 160px;
+    padding-bottom: 10px;
+  }
+  .textincard .nameincard {
+    font-size: 1rem;
+    padding: 6px 15px;
+    /* border: 2px solid teal; */
+    width: 70%;
+  }
+  .textincard .maintextbio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .secondpillbutton {
+    font-size: 1rem;
+    font-weight: lighter;
+    width: 70%;
+    padding: 12px 20px;
+    margin: 20px auto 0;
+    margin-bottom: 12px;
+  }
+  .contactIcons {
+    /* border: 2px solid teal; */
+    padding: 10px 0 20px 0;
+  }
+  .sociallinks {
+    margin: 0 10px;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 2000px) and (max-width: 2561px) {
+  .card {
+    margin-top: 4rem;
+    min-width: 27%;
+    height: 90vh;
+    /* overflow: visible; */
+  }
+  .innerdiv {
+    width: 130%;
+    height: 12rem;
+    transform: translateX(-180px) rotate(-15deg) translateY(190px);
+  }
+  .flipBox {
+    width: 190px;
+    height: 190px;
+  }
+  .introtextcontainer {
+    /* border: 1px solid red; */
+    margin-top: 8%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+  }
+  .introP {
+    font-size: 1.8rem;
+  }
+  .introtextcontainer p {
+    font-size: 1.2rem;
+  }
+  .textincard {
+    margin-top: 280px;
+    padding-bottom: 20px;
+    /* border: 2px solid yellow; */
+  }
+  .textincard .nameincard {
+    /* border: 2px solid red; */
+    margin-bottom: 25px;
+  }
+  .textincard .maintextbio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70%;
+    font-size: 1.2rem;
+    /* border: 1px solid red; */
+  }
+  .secondpillbutton {
+    padding: 12px 20px;
+    margin: 25px auto 20px;
+  }
+  .contactIcons {
+    /* border: 2px solid teal; */
+    padding: 10px 0 40px 0;
+    margin-bottom: 80px;
+  }
+}
