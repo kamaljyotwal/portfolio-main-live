@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* background: #243342; */
 }
 * {
   margin: 0;
@@ -293,6 +294,7 @@ body {
   /* display: none; */
   padding-top: 4.5rem;
   min-height: 100vh;
+  /* height: 100vh; */
   background: #243342;
   /* border: 5px solid seagreen; */
   /* position: unset; */
@@ -539,7 +541,7 @@ body {
 .contact {
   background: #243342;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   display: none;
   animation: fadingin 800ms linear;
@@ -569,7 +571,8 @@ body {
   padding: 3rem 0 0.3rem;
   color: #fff;
   font-family: poppins, sans-serif;
-  font-weight: 700;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 .contact hr {
   /* width: 15%; */
@@ -577,10 +580,9 @@ body {
   margin-bottom: 1rem;
   height: 1px;
   border: none;
-
   background: white;
 }
-.socialvr {
+/* .socialvr {
   width: 2px;
   height: 150px;
   background-color: #f1f1f1;
@@ -588,7 +590,7 @@ body {
   left: 50%;
   transform: skew(-20deg);
   z-index: 10;
-}
+} */
 
 .socialformContainer {
   position: relative;
@@ -596,20 +598,20 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-/*-------------social links-------------*/
 .sociallink {
   /* background: yellow; */
-  flex-grow: 2;
-  flex-shrink: 2;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 1rem;
   /* width: 40%; */
 }
 .thelinks {
   display: grid;
   grid-gap: 3px;
-  margin: 3rem 5rem 0;
+  margin: 5rem 0 0;
+  padding: 0 2rem;
   grid-template-columns: auto auto auto auto auto auto;
-  padding: 3rem 0;
-  /* border: 1px solid red;  */
+  /* border: 1px solid red; */
 }
 .thelinks .thelinkslink {
   font-size: 1.05rem;
@@ -618,7 +620,7 @@ body {
   text-decoration: none;
   /* border: 1px solid red; */
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.4rem 1.1rem;
   transition: all 100ms linear;
   opacity: 0.9;
   color: #2a4947;
@@ -626,7 +628,14 @@ body {
 .thelinks .thelinkslink:hover {
   opacity: 1;
 }
-
+.makeinline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeinline i {
+  padding: 0 0 0 5px;
+}
 .codepen {
   grid-column: span 6;
 }
@@ -653,13 +662,15 @@ body {
 
 /*---------Form styling-------- */
 .container {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   background: rgba(0, 0, 0, 0.3);
   /* background: red; */
   flex-grow: 3;
   flex-shrink: 3;
   width: 350px;
-  margin: 2rem 2rem 0;
-  padding: 2rem 0;
+  margin: 2rem 2rem 2rem;
+  padding: 2rem 1rem;
   font-size: 1rem;
   height: 75vh;
   font-family: "Source Sans Pro";
@@ -672,10 +683,10 @@ body {
   text-align: center;
 }
 
-.formSuccess h1 {
+.formSuccess h3 {
   transform: translateY(100px);
 }
-.container h1 {
+.container h3 {
   font-size: 2.5rem;
   transition-duration: 1s;
   transition-timing-function: ease;
@@ -771,4 +782,252 @@ body {
   left: 50%;
   transform: translateY(-50%);
 }
-/*  */
+
+/* ************************************************************************** */
+/* Media Queries */
+/* ************************************************************************** */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .menu-button .bar {
+    width: 24px;
+    height: 3px;
+  }
+  .menu-button {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+  }
+  .menu-wrap {
+    width: 250px;
+  }
+  .innerlink {
+    font-size: 1.1rem;
+  }
+  .textcontainer {
+    width: 85%;
+  }
+  .flipBox {
+    width: 100px;
+    height: 100px;
+  }
+  .frontFace {
+    border: 5px solid #dd5c4e;
+  }
+  .flipBox .backFace {
+    border: 5px solid #dd5c4e;
+    /* text-align: center; */
+    font-size: 5px;
+  }
+  .flipBox:hover .innermain {
+    transform: none;
+  }
+  .about h2 {
+    font-size: 2rem;
+    margin-top: 1.3rem;
+  }
+  .textcontainer {
+    padding: 10px 15px;
+    margin-bottom: 2rem;
+  }
+  .about .textcontainer p {
+    text-align: start;
+    font-size: 13px;
+  }
+  .about hr {
+    width: 60%;
+  }
+
+  /* projects sections */
+  .projectitle {
+    font-size: 1.5rem;
+    font-family: poppins;
+    font-weight: bold;
+    color: #28726c;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 0.2rem;
+    /* border: 2px solid yellow; */
+  }
+  .newprojectsection hr {
+    width: 50%;
+  }
+  .snip1336 {
+    /* border: 1px solid #243241; */
+    box-shadow: 1px 5px 5px 2px rgb(155, 155, 155);
+    /* width: 50%; */
+    margin: 1.5rem 0;
+  }
+
+  /* skills section */
+  .skills h3 {
+    /* border: 2px solid orange; */
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+  .skills hr {
+    width: 45%;
+  }
+  .skillscontainer .sectionsInContainer h4 {
+    font-size: 1.05rem;
+    padding-bottom: 2px;
+  }
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  .sectionsInContainer {
+    /* border: 2px solid green; */
+    padding-bottom: 0.7rem;
+  }
+
+  /* social section */
+  .custom-shape-divider-bottom-1598182187 {
+    display: none;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    letter-spacing: 3px;
+  }
+  .center-ball {
+    width: 50%;
+  }
+  .thelinks {
+    display: grid;
+    /* border: 2px solid orange; */
+    padding: 0;
+    /* width: 80%; */
+    margin: 16px 20px;
+  }
+  .thelinks .thelinkslink {
+    padding: 0.8rem 0.5rem;
+    font-size: 1rem;
+  }
+  .thelinks .thelinkslink p {
+    display: none;
+  }
+  .container {
+    background: rgba(0, 0, 0, 0.3);
+    margin: 1rem 1.1rem 3rem;
+    width: 300px;
+    height: 500px;
+    padding: 2rem 0 1rem;
+    border: radius 4px;
+  }
+  .container h3 {
+    font-size: 1.8rem;
+  }
+  .container input,
+  .container textarea,
+  .container button {
+    padding: 8px 15px;
+  }
+}
+
+/* media query for tab  */
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .menu-button .bar {
+    width: 30px;
+    height: 4px;
+  }
+  .textcontainer {
+    width: 70%;
+  }
+  .flipBox {
+    width: 120px;
+    height: 120px;
+  }
+  .flipBox:hover .innermain {
+    transform: none;
+  }
+  .frontFace {
+    border: 7px solid #dd5c4e;
+  }
+  .about h2 {
+    /* border: 2px solid yellow; */
+    font-size: 2.5rem;
+    margin-top: 1.4rem;
+    /* padding-top: 1rem; */
+  }
+  .about .textcontainer p {
+    text-align: start;
+    font-size: 14px;
+  }
+  .textcontainer {
+    padding: 15px 20px;
+    /* margin-bottom: 2rem; */
+  }
+  .about hr {
+    width: 50%;
+  }
+  /* projects sections */
+  .projectitle {
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+    padding-top: 2rem;
+  }
+  .newprojectsection hr {
+    width: 40%;
+  }
+  .skills h3 {
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-weight: light;
+    padding: 3rem 0 0.1rem;
+  }
+  .skills hr {
+    width: 30%;
+  }
+  .sectionsInContainer {
+    /* border: 2px solid red; */
+    padding-bottom: 10px;
+  }
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 0.95rem;
+  }
+
+  /* social section */
+  .contact {
+    /* background-color: red; */
+    height: auto;
+  }
+  .contact hr {
+    width: 28%;
+  }
+  .thelinks {
+    margin: 16px 20px;
+  }
+  .thelinks .thelinkslink {
+    padding: 1.1rem;
+    font-size: 1rem;
+  }
+  .socialformContainer {
+    position: relative;
+    border: 5px dotted rgb(160, 230, 70);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .sociallink {
+    /* background: yellow; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: auto;
+  }
+  .container {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 1rem auto 3rem;
+    width: 80%;
+    height: 500px;
+    /* padding: 2rem 1rem; */
+  }
+}
