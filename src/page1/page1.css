@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 html,
 body {
-  /* overflow: hidden; */
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -25,11 +24,9 @@ body {
   }
 }
 
-/*  */
 /* ************************************************* */
-/* copied nav bar */
+/* Side Nav-bar */
 /* ************************************************* */
-
 /* Menu Button */
 .menu-button {
   position: absolute;
@@ -58,31 +55,12 @@ body {
 .change .its2 {
   opacity: 0;
 } */
-/* .menu-button::before {
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em;
-  bottom: 0.5em;
-  left: 0.5em;
-  background: linear-gradient(
-    #373a47 20%,
-    transparent 20%,
-    transparent 40%,
-    #373a47 40%,
-    #373a47 60%,
-    transparent 60%,
-    transparent 80%,
-    #373a47 80%
-  );
-  content: "";
-} */
 
 .menu-button:hover {
   opacity: 0.6;
 }
 /* --------------------- */
 
-/*-------- Menu------------- */
 .menu-wrap {
   position: absolute;
   z-index: 20;
@@ -212,10 +190,7 @@ body {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-
-/* *******************************************************/
-/* copied code for nav bar ends*/
-/* **************************************************** */
+/* -------------------Nav End---------------------- */
 
 /* ********************************************************* */
 /* circle image*/
@@ -233,7 +208,6 @@ body {
   /* margin: 0 auto; */
   top: -50px;
   /* transform: rotate(15deg); */
-  /* */
   /*   border: 2px solid red; */
   /*   background-color: transparent; */
   z-index: 10;
@@ -465,14 +439,20 @@ body {
 /* *********************************************************** */
 .skills {
   display: none;
-  min-height: 100vh;
   width: 100%;
-  /* border: 2px solid yellow; */
-  background: #243342;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   animation: fadingin 800ms linear;
+  background: #243342;
+  position: relative;
 }
-
+#particles-js {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .skills h3 {
   /* border: 2px solid orange; */
   color: white;
@@ -569,7 +549,6 @@ body {
   padding: 3rem 0 0.3rem;
   color: #fff;
   font-family: poppins, sans-serif;
-  font-weight: lighter;
   letter-spacing: 2px;
 }
 .contact hr {
@@ -648,10 +627,9 @@ body {
 .email {
   grid-column: 1/-1;
 }
-
 /* social links end */
 
-/*---------Form styling-------- */
+/*Form  start*/
 .container {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;

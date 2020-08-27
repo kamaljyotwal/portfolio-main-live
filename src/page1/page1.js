@@ -18,3 +18,7 @@ function openSection(evt, sectionname) {
     document.getElementById(sectionname).style.display = "block";
     evt.currentTarget.className += " effectOnLinkclickActive";
 }
+// particles
+particlesJS.load("particles-js", "./particlesjs-config.json", function () {
+    console.log("callback - particles.js config loaded");
+});
