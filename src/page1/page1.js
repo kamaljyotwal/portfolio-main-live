@@ -22,3 +22,12 @@ function openSection(evt, sectionname) {
 particlesJS.load("particles-js", "./particlesjs-config.json", function () {
     console.log("callback - particles.js config loaded");
 });
+
+// particle opacity
+var element = document.getElementById("particles-js");
+function opacityparticleone() {
+    element.style.opacity = "1";
+}
+function opacityparticlezero() {
+    element.style.opacity = "0";
+}

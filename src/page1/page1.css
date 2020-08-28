@@ -440,12 +440,13 @@ body {
 .skills {
   display: none;
   width: 100%;
+  height: 100%;
   padding-bottom: 2rem;
   animation: fadingin 800ms linear;
   background: #243342;
-  position: relative;
 }
 #particles-js {
+  opacity: 0;
   width: 100%;
   position: absolute;
   top: 0;
@@ -512,6 +513,41 @@ body {
   padding-bottom: 2px;
 }
 /* --------------skills end----------------- */
+
+/* ****************************************************** */
+/* certificate section */
+/* ****************************************************** */
+.certi {
+  position: relative;
+}
+.innerlink i {
+  padding-left: 10px;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.tooltext {
+  position: absolute;
+  width: 350px;
+  background-color: black;
+  font-family: roboto;
+  font-weight: lighter;
+  color: white;
+  padding: 10px 0 10px 1.5rem;
+  border-radius: 7px;
+  left: 65%;
+  top: 50%;
+  transition: opacity 1s;
+  font-size: 1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.certi:hover .tooltext {
+  visibility: visible;
+  opacity: 1;
+  /* border-style: solid; */
+}
+/* .innerlink .fa-info-circle:hover{
+} */
 
 /* ***************************************************** */
 /* Contact Section  */

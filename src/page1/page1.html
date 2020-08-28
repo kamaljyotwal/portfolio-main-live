@@ -19,6 +19,7 @@
 
   <body>
     <main>
+      <div id="particles-js"></div>
       <!-- ======================================================= -->
       <!--side navbar  -->
       <!-- ======================================================= -->
@@ -32,19 +33,24 @@
         <nav class="menu">
           <div class="listContent">
             <a href="../../index.htm" class="innerlink innerlinkfirst">Home</a>
-            <a href="#" class="innerlink" onclick="openSection(event, 'projectsectionid')"
+            <a href="#" class="innerlink" onclick="openSection(event, 'projectsectionid'); opacityparticlezero()"
               >Projects</a
             >
-            <a href="#" class="innerlink active" onclick="openSection(event, 'skillsectionid')"
+            <a href="#" class="innerlink active"
+             onclick="openSection(event, 'skillsectionid'); opacityparticleone()"
               >Skills</a
             >
-            <a href="#" class="innerlink" onclick="openSection(event, 'projectsectionid')"
-              >Certificates</a
+
+            <a href="#" class="innerlink certi">
+                 Certificates <i class="fa fa-sm fa-info-circle"></i>
+                 <span class="tooltext"> This page is still under construction 🏗️🚧</span>
+            </a>
+            <!-- onclick="openSection(event, 'projectsectionid')" -->
+
+            <a href="#" class="innerlink" onclick="openSection(event, 'contactsectionid'); opacityparticlezero()"
+              >Contact</i></a
             >
-            <a href="#" class="innerlink" onclick="openSection(event, 'contactsectionid')"
-              >Contact</a
-            >
-            <a href="#" class="innerlink" onclick="openSection(event, 'aboutsectionid')">About</a>
+            <a href="#" class="innerlink" onclick="openSection(event, 'aboutsectionid'); opacityparticlezero()">About</a>
           </div>
         </nav>
         <button class="close-button" id="close-button">&times;</button>
@@ -201,94 +207,95 @@
       <!-- ======================================================= -->
       <!--Skill Section-->
       <!-- ======================================================= -->
+      
       <section class="skills sections" id="skillsectionid">
-        <h3>Skills</h3>
-
-        <hr />
-        <div class="skillscontainer">
-          <div class="sectionsInContainer">
-            <h4>Technologies of Web</h4>
-            <div class="chip">
-              <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
-              HTML 5
+          
+          <h3>Skills</h3>
+          <hr />
+          <div class="skillscontainer">
+            <div class="sectionsInContainer">
+              <h4>Technologies of Web</h4>
+              <div class="chip">
+                <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
+                HTML 5
+              </div>
+              <div class="chip">
+                <img src="../photos/icons/css.png" alt="Person" width="96" height="96" />
+                CSS 3
+              </div>
+              <div class="chip">
+                <img src="../photos/icons/js2.png" alt="Person" width="96" height="96" />
+                JAVASCRIPT + ES6
+              </div>
             </div>
-            <div class="chip">
-              <img src="../photos/icons/css.png" alt="Person" width="96" height="96" />
-              CSS 3
+            <div class="sectionsInContainer">
+              <h4>Css Styling Framework</h4>
+              <div class="chip bigimagechip">
+                <img src="../photos/icons/bootstrap.png" alt="Person" width="96" height="96" />
+                BOOTSTRAP
+              </div>
+              <div class="chip">
+                <img
+                  src="../photos/icons/Materialize-CSS-01.png"
+                  alt="Person"
+                  width="96"
+                  height="96"
+                />
+                MATERIALIZE
+              </div>
             </div>
-            <div class="chip">
-              <img src="../photos/icons/js2.png" alt="Person" width="96" height="96" />
-              JAVASCRIPT + ES6
+            <div class="sectionsInContainer">
+              <h4>Javascript Library</h4>
+              <div class="chip bigimagechip">
+                <img src="../photos/icons/react.png" alt="Person" width="96" height="96" />
+                REACT
+              </div>
+            </div>
+            <div class="sectionsInContainer">
+              <h4>State Management</h4>
+              <div class="chip">
+                <img src="../photos/icons/redux2.png" alt="Person" width="96" height="96" />
+                REDUX
+              </div>
+              <div class="chip bigimagechip">
+                <img src="../photos/icons/context2.png" alt="Person" width="96" height="96" />
+                Context API
+              </div>
+            </div>
+            <div class="sectionsInContainer">
+              <h4>Version Control</h4>
+              <div class="chip">
+                <img src="../photos/icons/github2.png" alt="Person" width="96" height="96" />
+                GITHUB
+              </div>
+              <div class="chip">
+                <img src="../photos/icons/git2.jpg" alt="Person" width="96" height="96" />
+                Git (Version Control)
+              </div>
+            </div>
+            <div class="sectionsInContainer">
+              <h4>CSS Pre-processors</h4>
+              <div class="chip bigimagechip">
+                <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" />
+                SCSS
+              </div>
+            </div>
+            <div class="sectionsInContainer">
+              <h4>Others</h4>
+              <div class="chip chipsalone">
+                <!-- <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" /> -->
+                DOM Maniputation
+              </div>
+              <div class="chip chipsalone">CSS Flexbox</div>
+              <div class="chip chipsalone">CSS Grid</div>
+              <div class="chip chipsalone">Responsive Design</div>
+              <div class="chip chipsalone">OOPS</div>
+              <div class="chip chipsalone">REACT Hooks</div>
+              <div class="chip chipsalone">Functional Programming</div>
             </div>
           </div>
-          <div class="sectionsInContainer">
-            <h4>Css Styling Framework</h4>
-            <div class="chip bigimagechip">
-              <img src="../photos/icons/bootstrap.png" alt="Person" width="96" height="96" />
-              BOOTSTRAP
-            </div>
-            <div class="chip">
-              <img
-                src="../photos/icons/Materialize-CSS-01.png"
-                alt="Person"
-                width="96"
-                height="96"
-              />
-              MATERIALIZE
-            </div>
-          </div>
-          <div class="sectionsInContainer">
-            <h4>Javascript Library</h4>
-            <div class="chip bigimagechip">
-              <img src="../photos/icons/react.png" alt="Person" width="96" height="96" />
-              REACT
-            </div>
-          </div>
-          <div class="sectionsInContainer">
-            <h4>State Management</h4>
-            <div class="chip">
-              <img src="../photos/icons/redux2.png" alt="Person" width="96" height="96" />
-              REDUX
-            </div>
-            <div class="chip bigimagechip">
-              <img src="../photos/icons/context2.png" alt="Person" width="96" height="96" />
-              Context API
-            </div>
-          </div>
-          <div class="sectionsInContainer">
-            <h4>Version Control</h4>
-            <div class="chip">
-              <img src="../photos/icons/github2.png" alt="Person" width="96" height="96" />
-              GITHUB
-            </div>
-            <div class="chip">
-              <img src="../photos/icons/git2.jpg" alt="Person" width="96" height="96" />
-              Git (Version Control)
-            </div>
-          </div>
-          <div class="sectionsInContainer">
-            <h4>CSS Pre-processors</h4>
-            <div class="chip bigimagechip">
-              <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" />
-              SCSS
-            </div>
-          </div>
-          <div class="sectionsInContainer">
-            <h4>Others</h4>
-            <div class="chip chipsalone">
-              <!-- <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" /> -->
-              DOM Maniputation
-            </div>
-            <div class="chip chipsalone">CSS Flexbox</div>
-            <div class="chip chipsalone">CSS Grid</div>
-            <div class="chip chipsalone">Responsive Design</div>
-            <div class="chip chipsalone">OOPS</div>
-            <div class="chip chipsalone">REACT Hooks</div>
-            <div class="chip chipsalone">Functional Programming</div>
-          </div>
-        </div>
-        <div id="particles-js"></div>
-      </section>
+          
+        </section>
       <!-- ====Skills End=======-->
 
       <section class="certificates"></section>
