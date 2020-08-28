@@ -49,7 +49,7 @@ body {
 /* Tilted Bar orange  */
 .innerdiv {
   width: 840px;
-  background: #f54e3b;
+  background: #d45041;
   opacity: 0.9;
   height: 10rem;
   transform: translateX(-180px) rotate(-18deg) translateY(135px);
@@ -117,7 +117,7 @@ body {
   border-radius: 50%;
 }
 .frontFace {
-  border: 8px solid #e64c3c;
+  border: 8px solid #c74a3c;
 }
 .backFace {
   font-size: 1.05rem;
@@ -130,7 +130,7 @@ body {
   justify-content: center;
   transform: rotatey(180deg);
   text-align: center;
-  border: 8px solid #b8382a;
+  border: 8px solid #d45041;
 }
 .flipBox:hover .innermain {
   transform: rotatey(180deg);
@@ -175,16 +175,16 @@ body {
 }
 .textincard .nameincard {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: light;
   font-family: roboto;
-  border: 1x solid #d44b3c;
+  border: 1x solid #d45041;
   border-radius: 28px;
   width: 50%;
   padding: 6px 20px;
   margin: 0 auto;
   text-align: center;
-  background-color: #e64c3c;
+  background-color: #d45041;
   margin-bottom: 12px;
   /* box-shadow: 0px 0px 2px 1px #9c9c9c; */
   cursor: unset;
@@ -193,7 +193,7 @@ body {
 hr {
   width: 70%;
   /* margin: 6px auto; */
-  background-color: #e64c3c;
+  background-color: #d45041;
   margin: 4px;
   height: 2px;
   border: 0 none;
@@ -237,16 +237,16 @@ hr {
 
 .secondpillbutton {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: regular;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1x solid #d44b3c;
+  border: 1x solid #d45041;
   border-radius: 28px;
   width: 40%;
   padding: 12px 20px;
   margin: 25px auto 0;
   text-align: center;
-  background-color: #e64c3c;
+  background-color: #d45041;
   margin-bottom: 12px;
   text-decoration: none;
   display: block;

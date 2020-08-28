@@ -505,7 +505,7 @@ body {
   /* border: 2px solid red; */
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .skillscontainer .sectionsInContainer h4 {
   color: white;
@@ -554,7 +554,7 @@ body {
 /* ***************************************************** */
 /* Contact Section  */
 /* ****************************************************** */
-footer {
+/* footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -571,11 +571,11 @@ footer {
 }
 footer p {
   text-align: center;
-}
+} */
 .contact {
   background: #243342;
   width: 100%;
-  /* height: 100vh; */
+  min-height: 100vh;
   position: relative;
   display: none;
   animation: fadingin 800ms linear;
@@ -624,8 +624,8 @@ footer p {
 }
 .center-ball::before {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 3px;
+  height: 3px;
   background: white;
   display: inline-block;
   border: 2px solid white;
@@ -712,7 +712,7 @@ footer p {
   flex-grow: 3;
   flex-shrink: 3;
   width: 350px;
-  margin: 0.5rem 4rem 3rem;
+  margin: 0.5rem 4rem 2rem;
   padding: 2rem 1rem;
   font-size: 1rem;
   height: 75vh;
