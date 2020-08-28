@@ -28,6 +28,9 @@ body {
 /* Side Nav-bar */
 /* ************************************************* */
 /* Menu Button */
+/* main {
+  position: relative;
+} */
 .menu-button {
   position: absolute;
   top: 1rem;
@@ -63,18 +66,17 @@ body {
 
 .menu-wrap {
   position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   z-index: 20;
   width: 300px;
-  height: 100vh;
   -webkit-transform: translate3d(-280px, 0, 0);
   transform: translate3d(-300px, 0, 0);
   -webkit-transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   /* border: 5px solid rgb(207, 51, 147); */
   box-shadow: 2px 0 3px rgb(77, 77, 77);
-  left: 0;
-  top: 0;
-  bottom: 0;
 }
 
 .menu {
@@ -297,7 +299,7 @@ body {
 
 .about .textcontainer p {
   padding-top: 1rem;
-  font-family: poppins;
+  font-family: poppins, sans-serif;
   font-weight: 300;
   font-size: 1.05rem;
   /* border: 1px solid yellow; */
@@ -552,6 +554,24 @@ body {
 /* ***************************************************** */
 /* Contact Section  */
 /* ****************************************************** */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  width: 100%;
+  padding: 10px 0;
+  color: rgb(240, 240, 240);
+  font-family: poppins, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+footer p {
+  text-align: center;
+}
 .contact {
   background: #243342;
   width: 100%;
@@ -594,6 +614,25 @@ body {
   height: 1px;
   border: none;
   background: white;
+}
+.center-ball {
+  background: aqua;
+  height: 1px;
+  /* position: relative; */
+  margin: 30px auto;
+  width: 20%;
+}
+.center-ball::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: white;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%);
 }
 
 .socialformContainer {
@@ -673,11 +712,12 @@ body {
   flex-grow: 3;
   flex-shrink: 3;
   width: 350px;
-  margin: 0.5rem 4rem 2rem;
+  margin: 0.5rem 4rem 3rem;
   padding: 2rem 1rem;
   font-size: 1rem;
   height: 75vh;
   font-family: "Source Sans Pro";
+  /* border: 2px solid red; */
 }
 .form {
   /* border: 1px solid yellow; */
@@ -708,10 +748,15 @@ body {
   border-radius: 3px;
   transition: all 400ms;
   font-size: 1rem;
+  color: white;
+}
+.container textarea {
+  /* color: #181a19 !important; */
+  font-weight: regular;
 }
 ::placeholder {
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   font-size: 1rem;
   font-family: "Source Sans Pro";
 }
@@ -733,7 +778,7 @@ body {
 .form input:focus {
   background-color: white;
   width: 100%;
-  color: #243342;
+  color: #000000;
 }
 .form textarea {
   font-family: "Source Sans Pro";
@@ -742,7 +787,7 @@ body {
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #272727;
+  color: white;
 }
 .form textarea:hover {
   background-color: rgba(255, 255, 255, 0.4);
@@ -750,6 +795,7 @@ body {
 .form textarea:focus {
   background: white;
   width: 100%;
+  color: black;
 }
 .form button {
   padding: 10px 15px;
@@ -767,25 +813,6 @@ body {
   outline: red;
 }
 /* form end */
-.center-ball {
-  background: aqua;
-  height: 1px;
-  /* position: relative; */
-  margin: 30px auto;
-  width: 20%;
-}
-.center-ball::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background: white;
-  display: inline-block;
-  border: 2px solid white;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translateY(-50%);
-}
 
 /* ************************************************************************** */
 /* Media Queries */
