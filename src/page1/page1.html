@@ -391,14 +391,15 @@
           <div class="container">
             <h3 class="formheading">Get in Touch</h3>
 
-            <form class="form">
-              <input type="text" placeholder="Your Name" name="showname" />
+            <form class="form" data-netlify="true" method="POST">
+              <input type="text" placeholder="Your Name" name="TheirName" />
               <textarea
-                name="themessage"
+                name="TheMessage"
                 id=""
                 cols="30"
                 rows="10"
                 placeholder="Your Message"
+              
               ></textarea>
               <button type="submit" id="sendButton">Send</button>
             </form>
