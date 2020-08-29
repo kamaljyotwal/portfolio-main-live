@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +31,10 @@ body {
   display: flex;
   justify-content: center;
   min-height: 50vh;
+  height: 100%;
 }
 .card {
-  width: 35vw;
+  width: 34vw;
   max-width: 600px;
   min-width: 400px;
   /* min-height: 115vh; */
@@ -49,7 +51,7 @@ body {
 /* Tilted Bar orange  */
 .innerdiv {
   width: 840px;
-  background: #d45041;
+  background: #eb5645;
   opacity: 0.9;
   height: 10rem;
   transform: translateX(-180px) rotate(-18deg) translateY(135px);
@@ -117,7 +119,7 @@ body {
   border-radius: 50%;
 }
 .frontFace {
-  border: 8px solid #c74a3c;
+  border: 8px solid #cc4f44;
 }
 .backFace {
   font-size: 1.05rem;
@@ -130,7 +132,7 @@ body {
   justify-content: center;
   transform: rotatey(180deg);
   text-align: center;
-  border: 8px solid #d45041;
+  border: 8px solid #cc4f44;
 }
 .flipBox:hover .innermain {
   transform: rotatey(180deg);
@@ -150,18 +152,19 @@ body {
 }
 .introP {
   color: white;
-  font-family: roboto, sans-serif;
-  font-size: 1.3rem;
-  font-weight: lighter;
+  font-family: raleway, sans-serif;
+  font-size: 1.2rem;
 }
 .introtextcontainer p {
   /* border: 1px solid yellow; */
   width: 80%;
   color: white;
-  font-family: sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 0.9rem;
+  font-weight: 300;
   margin: 0 auto;
   padding-top: 10px;
+  font-weight: 300;
 }
 /* Text in bar end */
 
@@ -178,13 +181,13 @@ body {
   font-size: 1.2rem;
   font-weight: light;
   font-family: roboto;
-  border: 1x solid #d45041;
+  border: 1x solid #d85447;
   border-radius: 28px;
   width: 50%;
-  padding: 6px 20px;
+  padding: 7px 20px;
   margin: 0 auto;
   text-align: center;
-  background-color: #d45041;
+  background-color: #d85447;
   margin-bottom: 12px;
   /* box-shadow: 0px 0px 2px 1px #9c9c9c; */
   cursor: unset;
@@ -230,8 +233,9 @@ hr {
   width: 80%;
   text-align: center;
   margin: auto;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-family: raleway;
+  /* font-weight: lighter; */
   /* border: 1px solid red; */
 }
 
@@ -239,14 +243,14 @@ hr {
   color: white;
   font-size: 1.05rem;
   font-weight: regular;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1x solid #d45041;
+  font-family: poppins, sans-serif;
+  border: 1x solid #d85447;
   border-radius: 28px;
   width: 40%;
-  padding: 12px 20px;
+  padding: 10px 20px;
   margin: 25px auto 0;
   text-align: center;
-  background-color: #d45041;
+  background-color: #d85447;
   margin-bottom: 12px;
   text-decoration: none;
   display: block;
@@ -286,9 +290,108 @@ hr {
 }
 
 /******************Media Queries**********************  */
+/*Mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 370px) {
+  .card {
+    max-width: 80%;
+    min-width: 250px;
+    height: 550px;
+  }
+  .innerdiv {
+    height: 5rem;
+    /* border: 1px solid yellow; */
+  }
+  .flipBox {
+    height: 100px;
+    width: 100px;
+  }
+  .frontFace {
+    border: 5px solid #cc4f44;
+  }
+  .backFace {
+    font-size: 0.7rem;
+    border: 5px solid #cc4f44;
+  }
+  .innerdiv {
+    transform: translateX(-180px) rotate(-18deg) translateY(90px);
+    width: 600px;
+    height: 6.5rem;
+  }
+  .introtextcontainer {
+    margin-top: 9%;
+    padding: 0 20px;
+    /* border: 1px solid green; */
+  }
+  .introP {
+    font-size: 0.705rem;
+    /* border: 1px solid yellow; */
+  }
+  .introtextcontainer p {
+    width: 80%;
+    color: white;
+    font-family: roboto, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin: 0 auto;
+    padding-top: 1px;
+    font-weight: 300;
+  }
+  .textincard {
+    margin-top: 130px;
+    padding-bottom: 5px;
+    /* border: 1px solid yellow; */
+  }
 
-/* for mobile */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .textincard .nameincard {
+    font-size: 0.9rem;
+    width: 60%;
+    padding: 4px 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  hr {
+    width: 60%;
+    margin: 3px auto;
+  }
+  .hr1 {
+    margin-left: 25%;
+  }
+  .hr2 {
+    margin-left: 15%;
+  }
+  .nameincardwithHr:hover .hr1 {
+    margin-left: 15%;
+  }
+  .nameincardwithHr:hover .hr2 {
+    margin-left: 25%;
+  }
+  .textincard .maintextbio {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 70%;
+    font-size: 0.8rem;
+    /* font-weight: lighter; */
+  }
+  .secondpillbutton {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    width: 55%;
+    padding: 6px 20px;
+    margin: 10px auto 0;
+    margin-bottom: 12px;
+  }
+  .contactIcons {
+    margin-top: 0;
+    padding: 10px 0 30px 0;
+    text-align: center;
+    /* border: 1px solid yellow; */
+  }
+  .contactIcons .fa {
+    font-size: 25px !important;
+  }
+}
+
+@media only screen and (min-device-width: 371px) and (max-device-width: 480px) {
   .card {
     /* background-color: yellow; */
     min-width: 50%;
@@ -338,7 +441,8 @@ hr {
 
   .secondpillbutton {
     font-size: 1rem;
-    font-weight: lighter;
+    font-family: raleway;
+    /* font-weight: lighter; */
     width: 70%;
     padding: 12px 20px;
     margin: 20px auto 0;
@@ -352,7 +456,6 @@ hr {
     margin: 0 10px;
   }
 }
-
 /* Large screens */
 @media only screen and (min-width: 2000px) and (max-width: 2561px) {
   .card {
