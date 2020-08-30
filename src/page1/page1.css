@@ -265,7 +265,7 @@ body {
   padding-top: 4.5rem;
   min-height: 100vh;
   /* height: 100vh; */
-  background: #243342;
+  background: #2C3F51;
   /* border: 5px solid seagreen; */
   /* position: unset; */
   animation: fadingin 800ms linear;
@@ -613,7 +613,7 @@ footer p {
   text-align: center;
 } */
 .contact {
-  background: #243342;
+  background: #2c3f51;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -889,7 +889,7 @@ footer p {
     transform: none;
   }
   body {
-    background-color: #243342;
+    background-color: #2c3f51;
   }
   .about {
     height: auto;
