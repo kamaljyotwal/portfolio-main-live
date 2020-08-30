@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176750086-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    tag('config', 'UA-176750086-1');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176750086-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      tag("config", "UA-176750086-1");
+    </script>
 
     <title>Kamal Jyotwal- Web developer</title>
     <meta charset="UTF-8" />
@@ -22,17 +24,16 @@
       crossorigin="anonymous"
     />
     <script src="./snap.svg-min.js"></script>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
     <main>
-      <div class="particle-container">
+      <div id="particle-container">
         <div id="particles-js"></div>
       </div>
-      
       <!-- ======================================================= -->
       <!--side navbar  -->
       <!-- ======================================================= -->
@@ -46,24 +47,37 @@
         <nav class="menu">
           <div class="listContent">
             <a href="../../index.htm" class="innerlink innerlinkfirst">Home</a>
-            <a href="#" class="innerlink" onclick="openSection(event, 'projectsectionid'); opacityparticlezero();"
+            <a
+              href="#"
+              class="innerlink"
+              onclick="openSection(event, 'projectsectionid'); opacityparticlezero(); particledisplaynone()"
               >Projects</a
             >
-            <a href="#" class="innerlink active"
-             onclick="openSection(event, 'skillsectionid'); opacityparticleone()"
+            <a
+              href="#"
+              class="innerlink active"
+              onclick="openSection(event, 'skillsectionid'); opacityparticleone(); particledisplayshow()"
               >Skills</a
             >
 
             <a href="#" class="innerlink certi">
-                 Certificates <i class="fa fa-sm fa-info-circle"></i>
-                 <span class="tooltext"> This page is still under construction 🏗️🚧</span>
+              Certificates <i class="fa fa-sm fa-info-circle"></i>
+              <span class="tooltext"> This page is still under construction 🏗️🚧</span>
             </a>
             <!-- onclick="openSection(event, 'projectsectionid')" -->
 
-            <a href="#" class="innerlink" onclick="openSection(event, 'contactsectionid'); opacityparticlezero()"
-              >Contact</i></a
+            <a
+              href="#"
+              class="innerlink"
+              onclick="openSection(event, 'contactsectionid'); opacityparticlezero(); particledisplaynone()"
+              >Contact</a
             >
-            <a href="#" class="innerlink" onclick="openSection(event, 'aboutsectionid'); opacityparticleone()">About</a>
+            <a
+              href="#"
+              class="innerlink"
+              onclick="openSection(event, 'aboutsectionid'); opacityparticleone(); particledisplayshow()"
+              >About</a
+            >
           </div>
         </nav>
         <button class="close-button" id="close-button">&times;</button>
@@ -103,18 +117,19 @@
           <h2 class="sectionheadingAbout">About</h2>
           <hr />
           <p>
-            I completed my engineering in Computer Science last year from a
-            reputed university of Delhi After that i chose to carve a career in development and felt inclination towards Web-development and
-            started learning with a goal to get good command over Front-End development and its
-            related technologies. Since then i have been working with these technologies day and
-            night. I have gathered some certificates and made some projects along the way some of
-            which can be viewed in the projects section.
+            I completed my engineering in Computer Science last year from a reputed university of
+            Delhi After that i chose to carve a career in development and felt inclination towards
+            Web-development and started learning with a goal to get good command over Front-End
+            development and its related technologies. Since then i have been working with these
+            technologies day and night. I have gathered some certificates and made some projects
+            along the way some of which can be viewed in the projects section.
             <br /><br />
             Besides that i have developed various standalone webpage features which are availble on
             my codepen account.
             <br /><br />
             I am looking for a oppurtunity as fulltime Developer/freelancer where i can put my skill
-            to work and find good compensation for it. The next milestone is to get expertise in M.E.R.N stack.
+            to work and find good compensation for it. The next milestone is to get expertise in
+            M.E.R.N stack.
           </p>
         </div>
       </section>
@@ -124,8 +139,11 @@
       <!--Project Section-->
       <!-- ======================================================= -->
       <section class="newprojectsection sections" id="projectsectionid">
-        <h2 class="projectitle">Projects</h2>
-        <hr />
+        <div class="titlewithhr">
+          <h2 class="projectitle">Projects</h2>
+          <hr class="projectHr projecthr1" />
+          <hr class="projectHr projecthr2" />
+        </div>
         <div class="projectTiles">
           <figure class="snip1336">
             <img src="../photos/screenshots/travelsmall.png" alt="sample87" />
@@ -218,95 +236,94 @@
       <!-- ======================================================= -->
       <!--Skill Section-->
       <!-- ======================================================= -->
-      
+
       <section class="skills sections" id="skillsectionid">
-          
-          <h3>Skills</h3>
-          <hr />
-          <div class="skillscontainer">
-            <div class="sectionsInContainer">
-              <h4>Technologies of Web</h4>
-              <div class="chip">
-                <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
-                HTML 5
-              </div>
-              <div class="chip">
-                <img src="../photos/icons/css.png" alt="Person" width="96" height="96" />
-                CSS 3
-              </div>
-              <div class="chip">
-                <img src="../photos/icons/js2.png" alt="Person" width="96" height="96" />
-                JAVASCRIPT + ES6
-              </div>
+        <h3>Skills</h3>
+        <hr />
+
+        <div class="skillscontainer">
+          <div class="sectionsInContainer">
+            <h4>Technologies of Web</h4>
+            <div class="chip">
+              <img src="../photos/icons/html.png" alt="Person" width="96" height="96" />
+              HTML 5
             </div>
-            <div class="sectionsInContainer">
-              <h4>Css Styling Framework</h4>
-              <div class="chip bigimagechip">
-                <img src="../photos/icons/bootstrap.png" alt="Person" width="96" height="96" />
-                BOOTSTRAP
-              </div>
-              <div class="chip">
-                <img
-                  src="../photos/icons/Materialize-CSS-01.png"
-                  alt="Person"
-                  width="96"
-                  height="96"
-                />
-                MATERIALIZE
-              </div>
+            <div class="chip">
+              <img src="../photos/icons/css.png" alt="Person" width="96" height="96" />
+              CSS 3
             </div>
-            <div class="sectionsInContainer">
-              <h4>Javascript Library</h4>
-              <div class="chip bigimagechip">
-                <img src="../photos/icons/react.png" alt="Person" width="96" height="96" />
-                REACT
-              </div>
-            </div>
-            <div class="sectionsInContainer">
-              <h4>State Management</h4>
-              <div class="chip">
-                <img src="../photos/icons/redux2.png" alt="Person" width="96" height="96" />
-                REDUX
-              </div>
-              <div class="chip bigimagechip">
-                <img src="../photos/icons/context2.png" alt="Person" width="96" height="96" />
-                Context API
-              </div>
-            </div>
-            <div class="sectionsInContainer">
-              <h4>Version Control</h4>
-              <div class="chip">
-                <img src="../photos/icons/github2.png" alt="Person" width="96" height="96" />
-                GITHUB
-              </div>
-              <div class="chip">
-                <img src="../photos/icons/git2.jpg" alt="Person" width="96" height="96" />
-                Git (Version Control)
-              </div>
-            </div>
-            <div class="sectionsInContainer">
-              <h4>CSS Pre-processors</h4>
-              <div class="chip bigimagechip">
-                <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" />
-                SCSS
-              </div>
-            </div>
-            <div class="sectionsInContainer">
-              <h4>Others</h4>
-              <div class="chip chipsalone">
-                <!-- <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" /> -->
-                DOM Maniputation
-              </div>
-              <div class="chip chipsalone">CSS Flexbox</div>
-              <div class="chip chipsalone">CSS Grid</div>
-              <div class="chip chipsalone">Responsive Design</div>
-              <div class="chip chipsalone">OOPS</div>
-              <div class="chip chipsalone">REACT Hooks</div>
-              <div class="chip chipsalone">Functional Programming</div>
+            <div class="chip">
+              <img src="../photos/icons/js2.png" alt="Person" width="96" height="96" />
+              JAVASCRIPT + ES6
             </div>
           </div>
-          
-        </section>
+          <div class="sectionsInContainer">
+            <h4>Css Styling Framework</h4>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/bootstrap.png" alt="Person" width="96" height="96" />
+              BOOTSTRAP
+            </div>
+            <div class="chip">
+              <img
+                src="../photos/icons/Materialize-CSS-01.png"
+                alt="Person"
+                width="96"
+                height="96"
+              />
+              MATERIALIZE
+            </div>
+          </div>
+          <div class="sectionsInContainer">
+            <h4>Javascript Library</h4>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/react.png" alt="Person" width="96" height="96" />
+              REACT
+            </div>
+          </div>
+          <div class="sectionsInContainer">
+            <h4>State Management</h4>
+            <div class="chip">
+              <img src="../photos/icons/redux2.png" alt="Person" width="96" height="96" />
+              REDUX
+            </div>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/context2.png" alt="Person" width="96" height="96" />
+              Context API
+            </div>
+          </div>
+          <div class="sectionsInContainer">
+            <h4>Version Control</h4>
+            <div class="chip">
+              <img src="../photos/icons/github2.png" alt="Person" width="96" height="96" />
+              GITHUB
+            </div>
+            <div class="chip">
+              <img src="../photos/icons/git2.jpg" alt="Person" width="96" height="96" />
+              Git (Version Control)
+            </div>
+          </div>
+          <div class="sectionsInContainer">
+            <h4>CSS Pre-processors</h4>
+            <div class="chip bigimagechip">
+              <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" />
+              SCSS
+            </div>
+          </div>
+          <div class="sectionsInContainer">
+            <h4>Others</h4>
+            <div class="chip chipsalone">
+              <!-- <img src="../photos/icons/sass.png" alt="Person" width="96" height="96" /> -->
+              DOM Maniputation
+            </div>
+            <div class="chip chipsalone">CSS Flexbox</div>
+            <div class="chip chipsalone">CSS Grid</div>
+            <div class="chip chipsalone">Responsive Design</div>
+            <div class="chip chipsalone">OOPS</div>
+            <div class="chip chipsalone">REACT Hooks</div>
+            <div class="chip chipsalone">Functional Programming</div>
+          </div>
+        </div>
+      </section>
       <!-- ====Skills End=======-->
 
       <section class="certificates"></section>
@@ -410,17 +427,14 @@
                 cols="30"
                 rows="10"
                 placeholder="Your Message"
-              
               ></textarea>
               <button type="submit" id="sendButton">Send</button>
             </form>
           </div>
-        
         </div>
         <!-- <footer>
         <p>Made by Kamal Jyotwal &#169;2020</p>
       </footer> -->
-    
       </section>
       <!-- ====Contact End=======-->
     </main>
@@ -433,9 +447,8 @@
         $(".formheading").text("Thanks for contacting");
       }
     </script>
-     <script src="./main4.js"></script>
+    <script src="./main4.js"></script>
     <script src="page1.js"></script>
     <script src="./classie.js"></script>
-   
   </body>
 </html>

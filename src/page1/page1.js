@@ -4,6 +4,7 @@
 //   }
 // end
 
+// tabs actived on Nav Click
 function openSection(evt, sectionname) {
     var i, x, tablinks;
     x = document.getElementsByClassName("sections");
@@ -23,11 +24,19 @@ particlesJS.load("particles-js", "./particlesjs-config.json", function () {
     console.log("particles loaded");
 });
 
-// particle opacity
-var element = document.getElementById("particles-js");
+var particle = document.getElementById("particles-js");
+var particlecontainer = document.getElementById("particle-container");
+
+// particles toggle on Navlink click
 function opacityparticleone() {
-    element.style.opacity = "1";
+    particle.style.opacity = "1";
 }
 function opacityparticlezero() {
-    element.style.opacity = "0";
+    particle.style.opacity = "0";
+}
+function particledisplaynone() {
+    particlecontainer.style.display = "none";
+}
+function particledisplayshow() {
+    particlecontainer.style.display = "block";
 }

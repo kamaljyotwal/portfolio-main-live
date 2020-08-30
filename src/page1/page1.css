@@ -35,7 +35,7 @@ body {
   position: absolute;
   top: 1rem;
   margin: 1.5rem 2rem;
-  z-index: 100;
+  z-index: 50;
   border: none;
   font-size: 1em;
 }
@@ -69,7 +69,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 100;
   width: 300px;
   -webkit-transform: translate3d(-280px, 0, 0);
   transform: translate3d(-300px, 0, 0);
@@ -240,6 +240,7 @@ body {
 }
 .backFace {
   font-size: 1rem;
+  padding-top: 20px;
   font-family: poppins;
   background-color: rgb(54, 54, 54);
   color: white;
@@ -248,7 +249,7 @@ body {
   align-items: center;
   justify-content: center;
   transform: rotatey(180deg);
-  text-align: center;
+  /* text-align: center; */
   border: 8px solid #b8382a;
 }
 .flipBox:hover .innermain {
@@ -291,8 +292,8 @@ body {
   font-family: poppins, sans-serif;
   font-weight: lighter;
   font-size: 2.5rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  /* padding-bottom: 0;
+  margin-bottom: 0; */
   /* border: 1px solid yellow; */
   margin-top: 0.5rem;
 }
@@ -309,7 +310,8 @@ body {
 }
 .about hr {
   width: 40%;
-  margin: 5px 0;
+  /* margin: 5px 0; */
+  margin-top: 0;
 }
 
 /* ************************************************************************* */
@@ -320,13 +322,29 @@ body {
   min-height: 100vh;
   background: rgb(47, 160, 150);
   background: linear-gradient(309deg, hsla(175, 55%, 41%, 0.5) 22%, rgba(255, 255, 255, 1) 85%);
+
   animation: fadingin 800ms linear;
 }
-.newprojectsection hr {
-  width: 25%;
-  background-color: #28726c;
+.projectHr {
+  width: 22%;
+  background-color: #669e97;
   margin: 0 auto 1rem;
+  border: 0 none;
+  height: 2px;
+  border-radius: 10px;
+  padding-top: 0;
+  margin-top: 0;
+  transition: all 200ms linear;
 }
+.projecthr1 {
+  margin-left: 37.5%;
+  margin-bottom: 5px;
+}
+.projecthr2 {
+  margin-left: 41%;
+  margin-bottom: 1rem;
+}
+
 .projectitle {
   font-size: 2.3rem;
   font-family: poppins;
@@ -334,9 +352,18 @@ body {
   color: #28726c;
   text-align: center;
   padding-top: 3rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.titlewithhr {
+  z-index: 100;
+}
+.titlewithhr:hover .projecthr1 {
+  margin-left: 40%;
+}
+.titlewithhr:hover .projecthr2 {
+  margin-left: 37%;
 }
 .projectTiles {
   width: 90%;
@@ -364,6 +391,10 @@ body {
   text-align: left;
   line-height: 1.4em;
   /* background-color: #2980b9; */
+  transition: transform 100ms;
+}
+.snip1336:hover {
+  transform: rotate(-2deg);
 }
 .snip1336 h2 {
   font-size: 1.6rem;
@@ -448,7 +479,7 @@ body {
   animation: fadingin 800ms linear;
   background: #243342;
 }
-.particle-container {
+#particle-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -617,7 +648,7 @@ footer p {
   letter-spacing: 2px;
 }
 .contact hr {
-  width: 30%;
+  width: 18%;
   margin: 0 auto;
   margin-bottom: 1rem;
   height: 1px;
@@ -625,9 +656,6 @@ footer p {
   background: white;
 }
 .center-ball {
-  background: aqua;
-  height: 1px;
-  /* position: relative; */
   margin: 30px auto;
   width: 20%;
 }
@@ -822,14 +850,13 @@ footer p {
   outline: red;
 }
 /* form end */
-
 /* ************************************************************************** */
 /* Media Queries */
 /* ************************************************************************** */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .menu-button .bar {
-    width: 24px;
+    widows: 28px;
     height: 3px;
   }
   .menu-button {
@@ -880,12 +907,13 @@ footer p {
     margin-bottom: 2rem;
   }
   .about .textcontainer p {
-    text-align: start;
-    font-size: 15px !important;
+    text-align: left;
     /* border: 1px solid green; */
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 13px;
     font-weight: lighter;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0;
   }
   .about hr {
     width: 50%;
@@ -894,6 +922,9 @@ footer p {
   }
 
   /* projects sections */
+  .newprojectsection {
+    background: rgb(252, 252, 252);
+  }
   .projectitle {
     font-size: 1.5rem;
     font-family: poppins;
@@ -907,11 +938,28 @@ footer p {
   .newprojectsection hr {
     width: 45%;
   }
+  .projecthr1 {
+    margin-left: 25%;
+    margin-bottom: 5px;
+  }
+  .projecthr2 {
+    margin-left: 35%;
+    margin-bottom: 1rem;
+  }
+  .titlewithhr:hover .projecthr1 {
+    margin-left: 30%;
+  }
+  .titlewithhr:hover .projecthr2 {
+    margin-left: 22%;
+  }
   .snip1336 {
     /* border: 1px solid #243241; */
     box-shadow: 1px 5px 5px 2px rgb(155, 155, 155);
     /* width: 50%; */
     margin: 1.5rem 0;
+  }
+  .snip1336:hover {
+    transform: none;
   }
 
   /* skills section */
@@ -1146,7 +1194,6 @@ footer p {
 /* *********************************** */
 /* for large screens */
 /* *********************************** */
-
 @media only screen and (min-device-width: 1900px) {
   /* about container */
   .textcontainer {
