@@ -35,7 +35,7 @@ body {
   position: absolute;
   top: 1rem;
   margin: 1.5rem 2rem;
-  z-index: 20;
+  z-index: 100;
   border: none;
   font-size: 1em;
 }
@@ -303,6 +303,7 @@ body {
   font-weight: 300;
   font-size: 1.05rem;
   /* border: 1px solid yellow; */
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
   text-align: justify;
 }
@@ -447,14 +448,22 @@ body {
   animation: fadingin 800ms linear;
   background: #243342;
 }
-#particles-js {
-  opacity: 0;
-  width: 100%;
+.particle-container {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
+}
+#particles-js {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .skills h3 {
   /* border: 2px solid orange; */
@@ -837,16 +846,6 @@ footer p {
   .textcontainer {
     width: 85%;
   }
-  #particles-js {
-    opacity: 0;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 170vh;
-  }
   .flipBox {
     width: 100px;
     height: 100px;
@@ -885,7 +884,7 @@ footer p {
     font-size: 15px !important;
     /* border: 1px solid green; */
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: lighter;
   }
   .about hr {
@@ -938,7 +937,17 @@ footer p {
     /* border: 2px solid green; */
     padding-bottom: 10px;
   }
-
+  .tooltext {
+    position: absolute;
+    width: 185px;
+    padding: 10px 0 10px 1.5rem;
+    left: 65%;
+    top: 50%;
+    transition: opacity 1s;
+    font-size: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+  }
   /* social section */
   .custom-shape-divider-bottom-1598182187 {
     display: none;
