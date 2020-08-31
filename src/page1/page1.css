@@ -265,7 +265,7 @@ body {
   padding-top: 4.5rem;
   min-height: 100vh;
   /* height: 100vh; */
-  background: #2C3F51;
+  background: #2c3f51;
   /* border: 5px solid seagreen; */
   /* position: unset; */
   animation: fadingin 800ms linear;
@@ -439,7 +439,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
-  transition: all 100ms linear;
+  /* transition: all 100ms linear; */
 }
 .info:hover {
   color: white;
