@@ -261,7 +261,7 @@ body {
 /* About section */
 /* ************************************************************************ */
 .about {
-  /* display: none; */
+  display: none;
   padding-top: 4.5rem;
   min-height: 100vh;
   /* height: 100vh; */
@@ -318,7 +318,7 @@ body {
 /* Projects section start */
 /* ************************************************************************* */
 .newprojectsection {
-  display: none;
+  /* display: none; */
   min-height: 100vh;
   background: rgb(47, 160, 150);
   background: linear-gradient(309deg, hsla(175, 55%, 41%, 0.5) 22%, rgba(255, 255, 255, 1) 85%);
