@@ -395,10 +395,13 @@ body {
   height: 420px;
 }
 .snip1336:hover {
-  transform: scale(1.02);
+  transform: rotate(-2deg);
 }
 .snip1336 h2 {
   font-size: 1.6rem;
+}
+.snip1336 h2 span {
+  font-size: 1.3rem;
 }
 
 .snip1336 img {
