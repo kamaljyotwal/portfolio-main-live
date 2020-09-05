@@ -419,25 +419,21 @@ hr {
   .introtextcontainer {
     top: 7.5rem;
     padding: 5px 10px;
-    /* border: 1px solid red; */
   }
   .introP {
     font-size: 0.76rem;
-    /* border: 1px solid yellow; */
   }
   .introtextcontainer p {
     font-size: 0.6rem;
     padding-top: 5px;
   }
   .textincard {
-    /* border: 2px solid teal; */
     margin-top: 160px;
     padding-bottom: 10px;
   }
   .textincard .nameincard {
     font-size: 1rem;
     padding: 6px 15px;
-    /* border: 2px solid teal; */
     width: 70%;
   }
   .textincard .maintextbio {
@@ -447,7 +443,6 @@ hr {
     text-align: center;
     margin: auto;
     font-size: 13px;
-    /* border: 2px solid teal; */
   }
   .textincard .nameincard {
     font-size: 0.9rem;
@@ -455,7 +450,6 @@ hr {
     padding: 4px 10px;
     margin: 0 auto;
     margin-bottom: 10px;
-    border: 2px solid teal;
   }
   .secondpillbutton {
     font-size: 0.9rem;
