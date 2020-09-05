@@ -371,6 +371,7 @@ hr {
     width: 70%;
     font-size: 0.8rem;
     /* font-weight: lighter; */
+    border: 1px solid yellow;
   }
   .secondpillbutton {
     font-size: 0.9rem;
@@ -398,25 +399,34 @@ hr {
     width: 70%;
   }
   .innerdiv {
-    height: 8rem;
+    height: 7rem;
   }
   .flipBox {
     width: 100px;
     height: 100px;
-    top: 70px;
+    top: 50px;
+  }
+  .frontFace {
+    border: 5px solid #cc4f44;
+  }
+  .backFace {
+    font-size: 0.7rem;
+    border: 5px solid #cc4f44;
   }
   .innerdiv {
-    transform: translateX(-180px) rotate(-15deg) translateY(100px);
+    transform: translateX(-180px) rotate(-18deg) translateY(70px);
   }
   .introtextcontainer {
-    top: 9rem;
+    top: 7.5rem;
     padding: 5px 10px;
+    /* border: 1px solid red; */
   }
   .introP {
-    font-size: 0.9rem;
+    font-size: 0.76rem;
+    /* border: 1px solid yellow; */
   }
   .introtextcontainer p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding-top: 5px;
   }
   .textincard {
@@ -431,21 +441,29 @@ hr {
     width: 70%;
   }
   .textincard .maintextbio {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 75%;
     text-align: center;
     margin: auto;
-    font-size: 14px;
+    font-size: 13px;
+    /* border: 2px solid teal; */
   }
-
+  .textincard .nameincard {
+    font-size: 0.9rem;
+    width: 60%;
+    padding: 4px 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 2px solid teal;
+  }
   .secondpillbutton {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: raleway;
     /* font-weight: lighter; */
-    width: 70%;
-    padding: 12px 20px;
-    margin: 20px auto 0;
+    width: 55%;
+    padding: 6px 16px;
+    margin: 15px auto 0;
     margin-bottom: 12px;
   }
   .contactIcons {
@@ -453,7 +471,8 @@ hr {
     padding: 10px 0 20px 0;
   }
   .sociallinks {
-    margin: 0 10px;
+    margin: 0 10px 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 /* Large screens */
