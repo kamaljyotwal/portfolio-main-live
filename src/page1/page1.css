@@ -285,7 +285,7 @@ body {
   overflow-y: none;
   /* font-family: Philosopher; */
   font-family: caveat;
-  /* border: 5px solid seagreen;  */
+  /* border: 5px solid red;  */
 }
 
 .about h2 {
@@ -1207,7 +1207,7 @@ footer p {
 /* *********************************** */
 /* for large screens */
 /* *********************************** */
-@media only screen and (min-width: 1915px) {
+@media only screen and (min-width: 1600px) {
   .menu-button {
     top: 2rem;
     left: 2rem;
@@ -1370,6 +1370,7 @@ footer p {
     width: 24%;
   }
   .projectTiles {
+    /* border: 1px solid green; */
     width: 70%;
   }
   .snip1336 h2 {
@@ -1434,4 +1435,33 @@ footer p {
     flex-grow: 1;
     flex-shrink: 1;
   }
+}
+
+@media only screen and (min-device-width: 2500px) {
+  .projectTiles {
+    /* border: 1px solid green; */
+    width: 50%;
+  }
+  .newprojectsection hr {
+    width: 20%;
+  }
+  .menu-wrap {
+    width: 350px;
+    box-shadow: none;
+  }
+  .socialformContainer {
+    width: 50%;
+  }
+  .custom-shape-divider-bottom-1598182187 svg {
+    height: 350px;
+  }
+  .projecthr1 {
+    margin-left: 38%;
+    margin-bottom: 8px;
+  }
+  .projecthr2 {
+    margin-left: 42%;
+    margin-bottom: 3rem;
+  }
+
 }
