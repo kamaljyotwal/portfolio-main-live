@@ -382,7 +382,7 @@ body {
   box-shadow: 1px 5px 5px 2px rgb(155, 155, 155);
   position: relative;
   overflow: hidden;
-  margin: 3rem 0;
+  margin: 1rem 0 4rem 0 !important;
   min-width: 300px;
   max-width: 550px;
   width: 27%;
@@ -391,7 +391,7 @@ body {
   text-align: left;
   line-height: 1.4em;
   /* background-color: #2980b9; */
-  transition: all 200ms;
+  transition: all 100ms;
   height: 420px;
 }
 .snip1336:hover {
@@ -1463,5 +1463,4 @@ footer p {
     margin-left: 42%;
     margin-bottom: 3rem;
   }
-
 }
