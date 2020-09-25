@@ -335,7 +335,6 @@ body {
   min-height: 100vh;
   background: rgb(47, 160, 150);
   background: linear-gradient(309deg, hsla(175, 55%, 41%, 0.5) 22%, rgba(255, 255, 255, 1) 85%);
-
   animation: fadingin 800ms linear;
 }
 .projectHr {
@@ -601,7 +600,7 @@ body {
   width: 25%;
   margin: 0 auto;
 }
-svg {
+.certisvg {
   position: absolute;
   bottom: 0;
 }
@@ -911,8 +910,8 @@ svg {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .menu-button .bar {
-    widows: 25px;
-    height: 3px;
+    widows: 23px;
+    height: 4px;
   }
   .menu-button {
     position: absolute;
@@ -920,8 +919,10 @@ svg {
     left: 2px;
   }
   .menu-wrap {
+    /* border: 1px dotted yellow; */
     width: 250px;
   }
+
   .innerlink {
     font-size: 1.1rem;
   }
@@ -945,9 +946,9 @@ svg {
   body {
     background: #2c3f51;
   }
-  .about {
+  /* .about {
     height: auto;
-  }
+  } */
   .about h2 {
     font-size: 2rem;
     margin-top: 1.3rem;
@@ -975,7 +976,10 @@ svg {
     margin: 0;
     padding: 0;
   }
-
+  .resume {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
   /* projects sections */
   .newprojectsection {
     background: rgb(255, 255, 255);
@@ -1124,7 +1128,7 @@ svg {
   .thumbnailcerti {
     max-width: 80%;
   }
-  svg {
+  .certisvg {
     width: 100%;
     height: 100px;
     position: absolute;
@@ -1280,7 +1284,6 @@ svg {
   .about {
     height: 110vh;
     overflow: hidden;
-
   }
 }
 /* *********************************** */
