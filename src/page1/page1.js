@@ -1,9 +1,3 @@
-// toggle of menu button
-// function toggleclass(x) {
-//     x.classList.toggle("change");
-//   }
-// end
-
 // tabs actived on Nav Click
 function openSection(evt, sectionname) {
     var i, x, tablinks;
@@ -40,3 +34,29 @@ function particledisplaynone() {
 function particledisplayshow() {
     particlecontainer.style.display = "block";
 }
+// certificate model
+
+var triggerfront = document.getElementById("triggerfront");
+var triggerjs = document.getElementById("triggerjs");
+var modelforfront = document.getElementById("modelforfront");
+var modalforjs = document.getElementById("modelforjs");
+var cross1 = document.getElementById("spancross1");
+var cross2 = document.getElementById("spancross2");
+// var caption = document.getElementById("caption");
+
+triggerfront.onclick = function () {
+    modelforfront.style.display = "block";
+    caption.innerHTML = this.alt;
+};
+triggerjs.onclick = function () {
+    modalforjs.style.display = "block";
+    caption.innerHTML = this.alt;
+};
+
+cross1.onclick = function () {
+    modelforfront.style.display = "none";
+};
+cross2.onclick = function () {
+    modalforjs.style.display = "none";
+};
+

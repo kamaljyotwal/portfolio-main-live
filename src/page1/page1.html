@@ -60,11 +60,13 @@
               >Skills</a
             >
 
-            <a href="#" class="innerlink certi">
-              Certificates <i class="fa fa-sm fa-info-circle"></i>
-              <span class="tooltext"> This page is still under construction 🏗️🚧</span>
+            <a
+              href="#"
+              class="innerlink certi"
+              onclick="openSection(event, 'certiSectionid'); opacityparticlezero(); particledisplaynone()"
+            >
+              Certificates
             </a>
-            <!-- onclick="openSection(event, 'projectsectionid')" -->
 
             <a
               href="#"
@@ -129,6 +131,13 @@
             skill to work and find good compensation for it. The next goal is to learn and get
             expertise in M.E.R.N stack.
           </p>
+
+          <a
+            href="https://drive.google.com/file/d/1YlZ3-G0juHWjlrgzD4imZ2sh1jKpeC-q/view?usp=sharing"
+            class="resume"
+            target="_blank"
+            >Resume</a
+          >
         </div>
       </section>
       <!-- ====About End=======-->
@@ -328,7 +337,7 @@
               >
             </figcaption>
           </figure>
-        
+
           <figure class="snip1336">
             <img src="https://i.postimg.cc/DwKmq5FW/slider-Smallss.png" alt="sample87" />
             <figcaption>
@@ -348,7 +357,6 @@
               >
             </figcaption>
           </figure>
-   
 
           <figure class="snip1336">
             <!-- <img src="../photos/screenshots/travelsmall.png" alt="sample87" /> -->
@@ -374,7 +382,6 @@
           </figure>
         </div>
       </section>
-      <!-- ====Project End=======-->
 
       <!-- ======================================================= -->
       <!--Skill Section-->
@@ -467,9 +474,47 @@
           </div>
         </div>
       </section>
-      <!-- ====Skills End=======-->
 
-      <section class="certificates"></section>
+      <!-- ======================================================= -->
+      <!--Certificate Section-->
+      <!-- ======================================================= -->
+      <section class="certificates sections" id="certiSectionid">
+        <h2 class="certititle">Certificates</h2>
+        <hr />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#28726C"
+            fill-opacity="1"
+            d="M0,224L80,202.7C160,181,320,139,480,149.3C640,160,800,224,960,218.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+
+        <div class="thumbnailContainer">
+          <img
+            src="https://i.postimg.cc/0QT0CNSs/frontCerti.png"
+            alt=""
+            class="thumbnailcerti"
+            id="triggerfront"
+          />
+          <img
+            src="https://i.postimg.cc/JnkbtW2d/jsCerti.png"
+            alt=""
+            class="thumbnailcerti"
+            id="triggerjs"
+          />
+        </div>
+
+        <div class="modeldiv" id="modelforfront">
+          <img src="https://i.postimg.cc/0QT0CNSs/frontCerti.png" alt="" class="model" />
+          <span id="spancross1">&times;</span>
+        </div>
+
+        <div class="modeldiv" id="modelforjs">
+          <img src="https://i.postimg.cc/JnkbtW2d/jsCerti.png" alt="" class="model" />
+          <span id="spancross2">&times;</span>
+        </div>
+      </section>
+
       <!-- ***************************************************** -->
       <!-- contact section -->
       <!-- ***************************************************** -->
