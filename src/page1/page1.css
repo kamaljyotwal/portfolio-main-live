@@ -578,12 +578,13 @@ body {
 /* certificate section */
 /* ****************************************************** */
 .certificates {
+  display: none;
   background-color: #243342;
   width: 100%;
   height: 110vh;
   /* height: auto; */
   position: relative;
-  display: none;
+  animation: fadingin 800ms linear;
 }
 .certititle {
   font-size: 2.2rem;

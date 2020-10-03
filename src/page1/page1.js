@@ -13,11 +13,11 @@ function openSection(evt, sectionname) {
     document.getElementById(sectionname).style.display = "block";
     evt.currentTarget.className += " effectOnLinkclickActive";
 }
+
 // particles
 particlesJS.load("particles-js", "./particlesjs-config.json", function () {
     console.log("particles loaded");
 });
-
 var particle = document.getElementById("particles-js");
 var particlecontainer = document.getElementById("particle-container");
 
@@ -34,8 +34,8 @@ function particledisplaynone() {
 function particledisplayshow() {
     particlecontainer.style.display = "block";
 }
-// certificate model
 
+// certificate model
 var triggerfront = document.getElementById("triggerfront");
 var triggerjs = document.getElementById("triggerjs");
 var modelforfront = document.getElementById("modelforfront");
