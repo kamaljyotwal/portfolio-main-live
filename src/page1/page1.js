@@ -46,11 +46,11 @@ var cross2 = document.getElementById("spancross2");
 
 triggerfront.onclick = function () {
     modelforfront.style.display = "block";
-    caption.innerHTML = this.alt;
+    // caption.innerHTML = this.alt;
 };
 triggerjs.onclick = function () {
     modalforjs.style.display = "block";
-    caption.innerHTML = this.alt;
+    // caption.innerHTML = this.alt;
 };
 
 cross1.onclick = function () {
