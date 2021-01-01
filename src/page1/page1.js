@@ -18,6 +18,8 @@ function openSection(evt, sectionname) {
 particlesJS.load("particles-js", "./particlesjs-config.json", function () {
     console.log("particles loaded");
 });
+
+
 var particle = document.getElementById("particles-js");
 var particlecontainer = document.getElementById("particle-container");
 
